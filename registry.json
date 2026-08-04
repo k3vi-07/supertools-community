@@ -1,0 +1,66 @@
+{
+  "name": "SuperTools 社区工具仓库",
+  "description": "SuperTools 开发者工具箱的社区远程工具集合",
+  "tools": [
+    {
+      "id": "json-to-xml",
+      "name": "JSON to XML",
+      "nameZh": "JSON 转 XML",
+      "icon": "mdi:file-xml-box",
+      "category": ["json"],
+      "keywords": ["json", "xml", "convert", "转换"],
+      "description": "将 JSON 数据转换为 XML 格式",
+      "path": "tools/JsonToXml.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "text-to-speech",
+      "name": "Text to Speech",
+      "nameZh": "文本转语音",
+      "icon": "mdi:volume-high",
+      "category": ["text"],
+      "keywords": ["tts", "speech", "audio", "语音", "朗读"],
+      "description": "使用浏览器 Web Speech API 朗读文本",
+      "path": "tools/TextToSpeech.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "number-to-chinese",
+      "name": "Number to Chinese",
+      "nameZh": "数字转中文大写",
+      "icon": "mdi:currency-cny",
+      "category": ["text"],
+      "keywords": ["number", "chinese", "金额", "大写", "人民币"],
+      "description": "将阿拉伯数字转换为中文大写金额",
+      "path": "tools/NumberToChinese.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "chinese-to-pinyin",
+      "name": "Chinese to Pinyin",
+      "nameZh": "中文转拼音",
+      "icon": "mdi:translate",
+      "category": ["text"],
+      "keywords": ["pinyin", "chinese", "拼音", "中文"],
+      "description": "将中文汉字转换为拼音首字母",
+      "path": "tools/ChineseToPinyin.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "emoji-picker",
+      "name": "Emoji Picker",
+      "nameZh": "Emoji 表情选择器",
+      "icon": "mdi:emoticon-outline",
+      "category": ["text"],
+      "keywords": ["emoji", "表情", "picker", "symbol"],
+      "description": "搜索和复制 Emoji 表情符号",
+      "path": "tools/EmojiPicker.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    }
+  ]
+}
