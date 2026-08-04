@@ -61,6 +61,114 @@
       "path": "tools/EmojiPicker.vue",
       "author": "k3vi-07",
       "version": "1.0.0"
+    },
+    {
+      "id": "unit-converter",
+      "name": "Unit Converter",
+      "nameZh": "单位换算器",
+      "icon": "mdi:ruler",
+      "category": ["web"],
+      "keywords": ["unit", "convert", "length", "weight", "temperature", "单位", "换算", "长度", "重量", "温度"],
+      "description": "长度/重量/温度/面积/速度/数据单位换算",
+      "path": "tools/UnitConverter.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "loan-calculator",
+      "name": "Loan Calculator",
+      "nameZh": "房贷计算器",
+      "icon": "mdi:calculator",
+      "category": ["web"],
+      "keywords": ["loan", "mortgage", "calculator", "房贷", "贷款", "计算器"],
+      "description": "等额本息房贷月供计算",
+      "path": "tools/LoanCalculator.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "hash-lookup",
+      "name": "Hash Lookup",
+      "nameZh": "哈希值识别",
+      "icon": "mdi:shield-search",
+      "category": ["cryptography"],
+      "keywords": ["hash", "identify", "detect", "识别", "哈希类型"],
+      "description": "识别哈希值类型和可能的加密算法",
+      "path": "tools/HashLookup.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "chmod-calculator",
+      "name": "Chmod Calculator",
+      "nameZh": "Chmod 权限计算器",
+      "icon": "mdi:lock-check",
+      "category": ["programming"],
+      "keywords": ["chmod", "permission", "linux", "权限", "计算"],
+      "description": "Linux 文件权限 chmod 计算器",
+      "path": "tools/ChmodCalculator.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "countdown-timer",
+      "name": "Countdown Timer",
+      "nameZh": "倒计时器",
+      "icon": "mdi:timer",
+      "category": ["datetime"],
+      "keywords": ["countdown", "timer", "倒计时", "计时"],
+      "description": "实时倒计时到指定日期",
+      "path": "tools/CountdownTimer.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "stopwatch",
+      "name": "Stopwatch",
+      "nameZh": "秒表",
+      "icon": "mdi:timer-outline",
+      "category": ["datetime"],
+      "keywords": ["stopwatch", "timer", "秒表", "计时器"],
+      "description": "高精度秒表，支持记圈",
+      "path": "tools/Stopwatch.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "figlet-art",
+      "name": "ASCII Art",
+      "nameZh": "ASCII 艺术字",
+      "icon": "mdi:format-text",
+      "category": ["text"],
+      "keywords": ["ascii", "art", "figlet", "艺术字", "字符画"],
+      "description": "将文本转换为 ASCII 艺术字",
+      "path": "tools/FigletArt.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "key-code-table",
+      "name": "Key Code Table",
+      "nameZh": "键盘 KeyCode 查询",
+      "icon": "mdi:keyboard",
+      "category": ["programming"],
+      "keywords": ["keycode", "keyboard", "key", "键盘", "按键"],
+      "description": "实时查询键盘按键的 keyCode 值",
+      "path": "tools/KeyCodeTable.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
+    },
+    {
+      "id": "utm-generator",
+      "name": "UTM Generator",
+      "nameZh": "UTM 链接生成器",
+      "icon": "mdi:link-plus",
+      "category": ["web"],
+      "keywords": ["utm", "url", "marketing", "tracking", "链接", "营销"],
+      "description": "生成带 UTM 追踪参数的营销链接",
+      "path": "tools/UtmGenerator.vue",
+      "author": "k3vi-07",
+      "version": "1.0.0"
     }
   ]
 }
