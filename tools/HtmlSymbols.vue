@@ -13,10 +13,9 @@
   </h-single-layout>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, computed } from 'vue'
 const search = ref('')
-interface Sym { char: string; entity: string; name: string }
 const symbols: Sym[] = [
   {char:'©',entity:'&copy;',name:'copyright 版权'},{char:'®',entity:'&reg;',name:'registered 注册商标'},
   {char:'™',entity:'&trade;',name:'trademark 商标'},{char:'€',entity:'&euro;',name:'euro 欧元'},
@@ -53,7 +52,7 @@ const filtered = computed(() => {
   const q = search.value.toLowerCase()
   return symbols.filter((s) => s.name.includes(q) || s.entity.includes(q) || s.char.includes(q))
 })
-function copy(sym: Sym): void {
+function copy(sym: Sym){
   window.$he3?.copyText(sym.entity)
   window.$he3?.message.success(`已复制 ${sym.entity} (${sym.char})`)
 }
