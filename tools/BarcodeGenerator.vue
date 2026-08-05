@@ -12,7 +12,7 @@
   </h-single-layout>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, onMounted } from 'vue'
 const text = ref('123456789012')
 const type = ref('CODE128')
@@ -22,27 +22,28 @@ const types = [
   { id: 'EAN13', label: 'EAN13' },
   { id: 'UPC', label: 'UPC' }
 ]
-const canvas = ref<HTMLCanvasElement>()
+const canvas = ref(null)
 const generated = ref(false)
 
-function generate(): void {
+function generate() {
   if (!canvas.value || !text.value) return
-  const ctx = canvas.value.getContext('2d')!
-  // 简化版条形码：根据文本生成条纹
-  const data = text.value.split('').map((c) => c.charCodeAt(0))
-  const barWidth = 2
-  const width = data.length * 7 * barWidth + 40
+  const ctx = canvas.value.getContext('2d')
+  var data = text.value.split('').map(function (c) { return c.charCodeAt(0) })
+  var barWidth = 2
+  var width = data.length * 7 * barWidth + 40
   canvas.value.width = width
   canvas.value.height = 100
   ctx.fillStyle = '#fff'
   ctx.fillRect(0, 0, width, 100)
-  let x = 20
-  for (const byte of data) {
-    for (let bit = 0; bit < 7; bit++) {
-      const isBlack = (byte >> bit) & 1
+  var x = 20
+  for (var i = 0; i < data.length; i++) {
+    var byte = data[i]
+    for (var bit = 0; bit < 7; bit++) {
+      var isBlack = (byte >> bit) & 1
       ctx.fillStyle = isBlack ? '#000' : '#fff'
-      for (let w = 0; w < barWidth; w++) {
-        ctx.fillRect(x++, 10, 1, 60)
+      for (var w = 0; w < barWidth; w++) {
+        ctx.fillRect(x, 10, 1, 60)
+        x++
       }
     }
     x += barWidth
@@ -54,15 +55,15 @@ function generate(): void {
   generated.value = true
 }
 
-function download(): void {
+function download() {
   if (!canvas.value) return
-  const link = document.createElement('a')
-  link.download = `barcode-${text.value}.png`
+  var link = document.createElement('a')
+  link.download = 'barcode-' + text.value + '.png'
   link.href = canvas.value.toDataURL()
   link.click()
 }
 
-onMounted(() => generate())
+onMounted(function () { generate() })
 </script>
 
 <style scoped>
