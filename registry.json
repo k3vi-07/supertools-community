@@ -2,36 +2,620 @@
   "name": "SuperTools 社区工具仓库",
   "description": "SuperTools 开发者工具箱的社区远程工具集合 - 30 个工具",
   "tools": [
-    {"id":"json-to-xml","name":"JSON to XML","nameZh":"JSON 转 XML","icon":"mdi:file-xml-box","category":["json"],"keywords":["json","xml","convert","转换"],"description":"将 JSON 数据转换为 XML 格式","path":"tools/JsonToXml.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"text-to-speech","name":"Text to Speech","nameZh":"文本转语音","icon":"mdi:volume-high","category":["text"],"keywords":["tts","speech","audio","语音","朗读"],"description":"使用浏览器 Web Speech API 朗读文本","path":"tools/TextToSpeech.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"number-to-chinese","name":"Number to Chinese","nameZh":"数字转中文大写","icon":"mdi:currency-cny","category":["text"],"keywords":["number","chinese","金额","大写","人民币"],"description":"将阿拉伯数字转换为中文大写金额","path":"tools/NumberToChinese.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"chinese-to-pinyin","name":"Chinese to Pinyin","nameZh":"中文转拼音","icon":"mdi:translate","category":["text"],"keywords":["pinyin","chinese","拼音","中文"],"description":"将中文汉字转换为拼音首字母","path":"tools/ChineseToPinyin.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"emoji-picker","name":"Emoji Picker","nameZh":"Emoji 表情选择器","icon":"mdi:emoticon-outline","category":["text"],"keywords":["emoji","表情","picker","symbol"],"description":"搜索和复制 Emoji 表情符号","path":"tools/EmojiPicker.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"unit-converter","name":"Unit Converter","nameZh":"单位换算器","icon":"mdi:ruler","category":["web"],"keywords":["unit","convert","length","weight","temperature","单位","换算"],"description":"长度/重量/温度/面积/速度/数据单位换算","path":"tools/UnitConverter.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"loan-calculator","name":"Loan Calculator","nameZh":"房贷计算器","icon":"mdi:calculator","category":["web"],"keywords":["loan","mortgage","calculator","房贷","贷款"],"description":"等额本息房贷月供计算","path":"tools/LoanCalculator.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"hash-lookup","name":"Hash Lookup","nameZh":"哈希值识别","icon":"mdi:shield-search","category":["cryptography"],"keywords":["hash","identify","detect","识别","哈希类型"],"description":"识别哈希值类型和可能的加密算法","path":"tools/HashLookup.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"chmod-calculator","name":"Chmod Calculator","nameZh":"Chmod 权限计算器","icon":"mdi:lock-check","category":["programming"],"keywords":["chmod","permission","linux","权限"],"description":"Linux 文件权限 chmod 计算器","path":"tools/ChmodCalculator.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"countdown-timer","name":"Countdown Timer","nameZh":"倒计时器","icon":"mdi:timer","category":["datetime"],"keywords":["countdown","timer","倒计时"],"description":"实时倒计时到指定日期","path":"tools/CountdownTimer.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"stopwatch","name":"Stopwatch","nameZh":"秒表","icon":"mdi:timer-outline","category":["datetime"],"keywords":["stopwatch","timer","秒表"],"description":"高精度秒表，支持记圈","path":"tools/Stopwatch.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"figlet-art","name":"ASCII Art","nameZh":"ASCII 艺术字","icon":"mdi:format-text","category":["text"],"keywords":["ascii","art","figlet","艺术字"],"description":"将文本转换为 ASCII 艺术字","path":"tools/FigletArt.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"key-code-table","name":"Key Code Table","nameZh":"键盘 KeyCode 查询","icon":"mdi:keyboard","category":["programming"],"keywords":["keycode","keyboard","key","键盘"],"description":"实时查询键盘按键的 keyCode 值","path":"tools/KeyCodeTable.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"utm-generator","name":"UTM Generator","nameZh":"UTM 链接生成器","icon":"mdi:link-plus","category":["web"],"keywords":["utm","url","marketing","tracking","营销"],"description":"生成带 UTM 追踪参数的营销链接","path":"tools/UtmGenerator.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"qr-scanner","name":"QR Code Scanner","nameZh":"二维码识别","icon":"mdi:qrcode-scan","category":["encode"],"keywords":["qr","qrcode","scan","识别","扫码"],"description":"上传图片识别二维码内容","path":"tools/QrCodeScanner.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"compound-interest","name":"Compound Interest","nameZh":"复利计算器","icon":"mdi:chart-line","category":["web"],"keywords":["compound","interest","复利","投资","收益"],"description":"复利投资收益计算","path":"tools/CompoundInterest.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"ip-location","name":"IP Location","nameZh":"IP 定位","icon":"mdi:map-marker","category":["network"],"keywords":["ip","location","geolocation","定位","地理"],"description":"查询 IP 地址的地理位置信息","path":"tools/IpLocation.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"base-converter","name":"Base Converter","nameZh":"进制转换器","icon":"mdi:radix","category":["programming"],"keywords":["binary","hex","decimal","octal","进制","二进制"],"description":"多进制快速转换工具","path":"tools/BaseConverter.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"symbol-picker","name":"Symbol Picker","nameZh":"特殊符号选择器","icon":"mdi:sigma","category":["text"],"keywords":["symbol","special","符号","特殊字符"],"description":"数学、箭头、花色等特殊符号","path":"tools/SymbolPicker.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"character-counter","name":"Character Counter","nameZh":"字符计数器","icon":"mdi:counter","category":["text"],"keywords":["count","character","字数","字符","计数"],"description":"实时统计字符/单词/行数/中文字数","path":"tools/CharacterCounter.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"color-contrast","name":"Color Contrast","nameZh":"颜色对比度检查","icon":"mdi:contrast","category":["color"],"keywords":["color","contrast","wcag","accessibility","对比度","无障碍"],"description":"WCAG 颜色对比度合规检查","path":"tools/ColorContrast.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"css-grid-generator","name":"CSS Grid Generator","nameZh":"Grid 布局生成器","icon":"mdi:view-grid","category":["web"],"keywords":["css","grid","layout","布局","生成"],"description":"可视化生成 CSS Grid 布局","path":"tools/CssGridGenerator.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"jwt-generator","name":"JWT Generator","nameZh":"JWT 生成器","icon":"mdi:key-plus","category":["cryptography"],"keywords":["jwt","token","generate","生成","令牌"],"description":"使用密钥生成 JWT Token","path":"tools/JwtGenerator.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"random-string","name":"Random String","nameZh":"随机字符串生成","icon":"mdi:shuffle-variant","category":["text"],"keywords":["random","string","token","随机","字符串"],"description":"生成安全的随机字符串","path":"tools/RandomString.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"html-symbols","name":"HTML Symbols","nameZh":"HTML 符号速查","icon":"mdi:code-not-equal-variant","category":["web"],"keywords":["html","symbol","entity","符号","实体"],"description":"HTML 特殊符号实体编码速查表","path":"tools/HtmlSymbols.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"text-flip","name":"Text Flip","nameZh":"趣味文字翻转","icon":"mdi:flip-vertical","category":["text"],"keywords":["flip","upside","mirror","fancy","翻转","镜像","花体"],"description":"上下翻转/镜像/气泡字/全角等趣味文字","path":"tools/TextFlip.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"exchange-rate","name":"Exchange Rate","nameZh":"汇率换算","icon":"mdi:currency-usd","category":["web"],"keywords":["exchange","rate","currency","汇率","货币"],"description":"实时汇率换算（10种货币）","path":"tools/ExchangeRate.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"ping-test","name":"Ping Test","nameZh":"Ping 延迟测试","icon":"mdi:speedometer","category":["network"],"keywords":["ping","latency","network","延迟","网络"],"description":"测试网站延迟（近似 ping）","path":"tools/PingTest.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"json-diff","name":"JSON Diff","nameZh":"JSON 对比","icon":"mdi:file-compare","category":["json"],"keywords":["json","diff","compare","对比","差异"],"description":"深度对比两个 JSON 的差异","path":"tools/JsonDiff.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"barcode-generator","name":"Barcode Generator","nameZh":"条形码生成器","icon":"mdi:barcode","category":["encode"],"keywords":["barcode","generate","条形码","生成"],"description":"生成 CODE128/CODE39 条形码","path":"tools/BarcodeGenerator.vue","author":"k3vi-07","version":"1.0.0"},
-    {"id":"float-converter","name":"Float Converter","nameZh":"浮点数转换","icon":"mdi:decimal","category":["programming"],"keywords":["float","ieee754","hex","binary","浮点数"],"description":"IEEE 754 浮点数与十六进制互转","path":"tools/FloatConverter.vue","author":"k3vi-07","version":"1.0.0"}
-  ]
+    {
+      "id": "json-to-xml",
+      "name": "JSON to XML",
+      "nameZh": "JSON 转 XML",
+      "icon": "mdi:file-xml-box",
+      "category": [
+        "json"
+      ],
+      "keywords": [
+        "json",
+        "xml",
+        "convert",
+        "转换"
+      ],
+      "description": "将 JSON 数据转换为 XML 格式",
+      "path": "tools/JsonToXml.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "text-to-speech",
+      "name": "Text to Speech",
+      "nameZh": "文本转语音",
+      "icon": "mdi:volume-high",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "tts",
+        "speech",
+        "audio",
+        "语音",
+        "朗读"
+      ],
+      "description": "使用浏览器 Web Speech API 朗读文本",
+      "path": "tools/TextToSpeech.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "number-to-chinese",
+      "name": "Number to Chinese",
+      "nameZh": "数字转中文大写",
+      "icon": "mdi:currency-cny",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "number",
+        "chinese",
+        "金额",
+        "大写",
+        "人民币"
+      ],
+      "description": "将阿拉伯数字转换为中文大写金额",
+      "path": "tools/NumberToChinese.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "chinese-to-pinyin",
+      "name": "Chinese to Pinyin",
+      "nameZh": "中文转拼音",
+      "icon": "mdi:translate",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "pinyin",
+        "chinese",
+        "拼音",
+        "中文"
+      ],
+      "description": "将中文汉字转换为拼音首字母",
+      "path": "tools/ChineseToPinyin.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "emoji-picker",
+      "name": "Emoji Picker",
+      "nameZh": "Emoji 表情选择器",
+      "icon": "mdi:emoticon-outline",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "emoji",
+        "表情",
+        "picker",
+        "symbol"
+      ],
+      "description": "搜索和复制 Emoji 表情符号",
+      "path": "tools/EmojiPicker.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "unit-converter",
+      "name": "Unit Converter",
+      "nameZh": "单位换算器",
+      "icon": "mdi:ruler",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "unit",
+        "convert",
+        "length",
+        "weight",
+        "temperature",
+        "单位",
+        "换算"
+      ],
+      "description": "长度/重量/温度/面积/速度/数据单位换算",
+      "path": "tools/UnitConverter.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "loan-calculator",
+      "name": "Loan Calculator",
+      "nameZh": "房贷计算器",
+      "icon": "mdi:calculator",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "loan",
+        "mortgage",
+        "calculator",
+        "房贷",
+        "贷款"
+      ],
+      "description": "等额本息房贷月供计算",
+      "path": "tools/LoanCalculator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "hash-lookup",
+      "name": "Hash Lookup",
+      "nameZh": "哈希值识别",
+      "icon": "mdi:shield-search",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "hash",
+        "identify",
+        "detect",
+        "识别",
+        "哈希类型"
+      ],
+      "description": "识别哈希值类型和可能的加密算法",
+      "path": "tools/HashLookup.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "chmod-calculator",
+      "name": "Chmod Calculator",
+      "nameZh": "Chmod 权限计算器",
+      "icon": "mdi:lock-check",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "chmod",
+        "permission",
+        "linux",
+        "权限"
+      ],
+      "description": "Linux 文件权限 chmod 计算器",
+      "path": "tools/ChmodCalculator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "countdown-timer",
+      "name": "Countdown Timer",
+      "nameZh": "倒计时器",
+      "icon": "mdi:timer",
+      "category": [
+        "datetime"
+      ],
+      "keywords": [
+        "countdown",
+        "timer",
+        "倒计时"
+      ],
+      "description": "实时倒计时到指定日期",
+      "path": "tools/CountdownTimer.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "stopwatch",
+      "name": "Stopwatch",
+      "nameZh": "秒表",
+      "icon": "mdi:timer-outline",
+      "category": [
+        "datetime"
+      ],
+      "keywords": [
+        "stopwatch",
+        "timer",
+        "秒表"
+      ],
+      "description": "高精度秒表，支持记圈",
+      "path": "tools/Stopwatch.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "figlet-art",
+      "name": "ASCII Art",
+      "nameZh": "ASCII 艺术字",
+      "icon": "mdi:format-text",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "ascii",
+        "art",
+        "figlet",
+        "艺术字"
+      ],
+      "description": "将文本转换为 ASCII 艺术字",
+      "path": "tools/FigletArt.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "key-code-table",
+      "name": "Key Code Table",
+      "nameZh": "键盘 KeyCode 查询",
+      "icon": "mdi:keyboard",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "keycode",
+        "keyboard",
+        "key",
+        "键盘"
+      ],
+      "description": "实时查询键盘按键的 keyCode 值",
+      "path": "tools/KeyCodeTable.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "utm-generator",
+      "name": "UTM Generator",
+      "nameZh": "UTM 链接生成器",
+      "icon": "mdi:link-plus",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "utm",
+        "url",
+        "marketing",
+        "tracking",
+        "营销"
+      ],
+      "description": "生成带 UTM 追踪参数的营销链接",
+      "path": "tools/UtmGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "qr-scanner",
+      "name": "QR Code Scanner",
+      "nameZh": "二维码识别",
+      "icon": "mdi:qrcode-scan",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "qr",
+        "qrcode",
+        "scan",
+        "识别",
+        "扫码"
+      ],
+      "description": "上传图片识别二维码内容",
+      "path": "tools/QrCodeScanner.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "compound-interest",
+      "name": "Compound Interest",
+      "nameZh": "复利计算器",
+      "icon": "mdi:chart-line",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "compound",
+        "interest",
+        "复利",
+        "投资",
+        "收益"
+      ],
+      "description": "复利投资收益计算",
+      "path": "tools/CompoundInterest.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "ip-location",
+      "name": "IP Location",
+      "nameZh": "IP 定位",
+      "icon": "mdi:map-marker",
+      "category": [
+        "network"
+      ],
+      "keywords": [
+        "ip",
+        "location",
+        "geolocation",
+        "定位",
+        "地理"
+      ],
+      "description": "查询 IP 地址的地理位置信息",
+      "path": "tools/IpLocation.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "base-converter",
+      "name": "Base Converter",
+      "nameZh": "进制转换器",
+      "icon": "mdi:radix",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "binary",
+        "hex",
+        "decimal",
+        "octal",
+        "进制",
+        "二进制"
+      ],
+      "description": "多进制快速转换工具",
+      "path": "tools/BaseConverter.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "symbol-picker",
+      "name": "Symbol Picker",
+      "nameZh": "特殊符号选择器",
+      "icon": "mdi:sigma",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "symbol",
+        "special",
+        "符号",
+        "特殊字符"
+      ],
+      "description": "数学、箭头、花色等特殊符号",
+      "path": "tools/SymbolPicker.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "character-counter",
+      "name": "Character Counter",
+      "nameZh": "字符计数器",
+      "icon": "mdi:counter",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "count",
+        "character",
+        "字数",
+        "字符",
+        "计数"
+      ],
+      "description": "实时统计字符/单词/行数/中文字数",
+      "path": "tools/CharacterCounter.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "color-contrast",
+      "name": "Color Contrast",
+      "nameZh": "颜色对比度检查",
+      "icon": "mdi:contrast",
+      "category": [
+        "color"
+      ],
+      "keywords": [
+        "color",
+        "contrast",
+        "wcag",
+        "accessibility",
+        "对比度",
+        "无障碍"
+      ],
+      "description": "WCAG 颜色对比度合规检查",
+      "path": "tools/ColorContrast.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "css-grid-generator",
+      "name": "CSS Grid Generator",
+      "nameZh": "Grid 布局生成器",
+      "icon": "mdi:view-grid",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "css",
+        "grid",
+        "layout",
+        "布局",
+        "生成"
+      ],
+      "description": "可视化生成 CSS Grid 布局",
+      "path": "tools/CssGridGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "jwt-generator",
+      "name": "JWT Generator",
+      "nameZh": "JWT 生成器",
+      "icon": "mdi:key-plus",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "jwt",
+        "token",
+        "generate",
+        "生成",
+        "令牌"
+      ],
+      "description": "使用密钥生成 JWT Token",
+      "path": "tools/JwtGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "random-string",
+      "name": "Random String",
+      "nameZh": "随机字符串生成",
+      "icon": "mdi:shuffle-variant",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "random",
+        "string",
+        "token",
+        "随机",
+        "字符串"
+      ],
+      "description": "生成安全的随机字符串",
+      "path": "tools/RandomString.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "html-symbols",
+      "name": "HTML Symbols",
+      "nameZh": "HTML 符号速查",
+      "icon": "mdi:code-not-equal-variant",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "html",
+        "symbol",
+        "entity",
+        "符号",
+        "实体"
+      ],
+      "description": "HTML 特殊符号实体编码速查表",
+      "path": "tools/HtmlSymbols.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "text-flip",
+      "name": "Text Flip",
+      "nameZh": "趣味文字翻转",
+      "icon": "mdi:flip-vertical",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "flip",
+        "upside",
+        "mirror",
+        "fancy",
+        "翻转",
+        "镜像",
+        "花体"
+      ],
+      "description": "上下翻转/镜像/气泡字/全角等趣味文字",
+      "path": "tools/TextFlip.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "exchange-rate",
+      "name": "Exchange Rate",
+      "nameZh": "汇率换算",
+      "icon": "mdi:currency-usd",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "exchange",
+        "rate",
+        "currency",
+        "汇率",
+        "货币"
+      ],
+      "description": "实时汇率换算（10种货币）",
+      "path": "tools/ExchangeRate.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "ping-test",
+      "name": "Ping Test",
+      "nameZh": "Ping 延迟测试",
+      "icon": "mdi:speedometer",
+      "category": [
+        "network"
+      ],
+      "keywords": [
+        "ping",
+        "latency",
+        "network",
+        "延迟",
+        "网络"
+      ],
+      "description": "测试网站延迟（近似 ping）",
+      "path": "tools/PingTest.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "json-diff",
+      "name": "JSON Diff",
+      "nameZh": "JSON 对比",
+      "icon": "mdi:file-compare",
+      "category": [
+        "json"
+      ],
+      "keywords": [
+        "json",
+        "diff",
+        "compare",
+        "对比",
+        "差异"
+      ],
+      "description": "深度对比两个 JSON 的差异",
+      "path": "tools/JsonDiff.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "barcode-generator",
+      "name": "Barcode Generator",
+      "nameZh": "条形码生成器",
+      "icon": "mdi:barcode",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "barcode",
+        "generate",
+        "条形码",
+        "生成"
+      ],
+      "description": "生成 CODE128/CODE39 条形码",
+      "path": "tools/BarcodeGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "float-converter",
+      "name": "Float Converter",
+      "nameZh": "浮点数转换",
+      "icon": "mdi:decimal",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "float",
+        "ieee754",
+        "hex",
+        "binary",
+        "浮点数"
+      ],
+      "description": "IEEE 754 浮点数与十六进制互转",
+      "path": "tools/FloatConverter.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    }
+  ],
+  "version": "v1.2.0"
 }
