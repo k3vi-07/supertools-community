@@ -15,7 +15,7 @@
   </h-single-layout>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue'
 const currencies = ['USD','EUR','CNY','JPY','GBP','KRW','HKD','AUD','CAD','SGD']
 const amount = ref(100)
@@ -23,7 +23,7 @@ const base = ref('USD')
 const rates = ref<Record<string, number> | null>(null)
 const loading = ref(false)
 
-async function fetchRates(): Promise<void> {
+async function fetchRates(){
   loading.value = true
   try {
     const src = await window.supertools.fetchRemote(`https://api.exchangerate-api.com/v4/latest/${base.value}`)
@@ -33,7 +33,7 @@ async function fetchRates(): Promise<void> {
       if (c !== base.value && data.rates[c]) rates.value[c] = data.rates[c]
     }
   } catch (err) {
-    window.$he3?.message.error('查询失败: ' + (err as Error).message)
+    window.$he3?.message.error('查询失败: ' + err.message)
   } finally { loading.value = false }
 }
 fetchRates()
