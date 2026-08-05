@@ -22,14 +22,14 @@
   </h-single-layout>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, reactive } from 'vue'
 const length = ref(32)
 const count = ref(5)
 const opts = reactive({ lower: true, upper: true, numbers: true, symbols: false })
 const results = ref<string[]>([])
 
-function generate(): void {
+function generate(){
   let chars = ''
   if (opts.lower) chars += 'abcdefghijklmnopqrstuvwxyz'
   if (opts.upper) chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -42,7 +42,7 @@ function generate(): void {
     return Array.from(arr).map((n) => chars[n % chars.length]).join('')
   })
 }
-function copy(s: string): void { window.$he3?.copyText(s); window.$he3?.message.success('已复制') }
+function copy(s: string){ window.$he3?.copyText(s); window.$he3?.message.success('已复制') }
 generate()
 </script>
 
