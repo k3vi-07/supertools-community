@@ -12,7 +12,7 @@
   </h-single-layout>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, computed } from 'vue'
 const type = ref('upside')
 const types = [
