@@ -1,6 +1,6 @@
 {
   "name": "SuperTools 社区工具仓库",
-  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 43 个工具",
+  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 51 个工具",
   "tools": [
     {
       "id": "json-to-xml",
@@ -849,7 +849,173 @@
       "path": "tools/RegexTester.vue",
       "author": "k3vi-07",
       "version": "v1.3.0"
+    },
+    {
+      "id": "des-encryption",
+      "name": "DES Encryption",
+      "nameZh": "DES/3DES 加解密",
+      "icon": "mdi:lock-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "des",
+        "3des",
+        "triple",
+        "encryption",
+        "加密",
+        "对称"
+      ],
+      "description": "DES/3DES 对称加密解密（ECB/CBC 模式）",
+      "path": "tools/DesEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "pbkdf2-generator",
+      "name": "PBKDF2 Generator",
+      "nameZh": "PBKDF2 密钥派生",
+      "icon": "mdi:key-chain-variant",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "pbkdf2",
+        "key",
+        "derivation",
+        "derive",
+        "密钥"
+      ],
+      "description": "PBKDF2 密钥派生函数（迭代/盐/长度可调）",
+      "path": "tools/Pbkdf2Generator.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "hmac-generator-pro",
+      "name": "HMAC Generator Pro",
+      "nameZh": "HMAC 全系列生成",
+      "icon": "mdi:shield-key",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "hmac",
+        "sha",
+        "sign",
+        "签名",
+        "认证"
+      ],
+      "description": "HMAC 全系列（SHA-1/256/384/512）实时计算",
+      "path": "tools/HmacGeneratorPro.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "sm3-hash",
+      "name": "SM3 Hash",
+      "nameZh": "SM3 国密哈希",
+      "icon": "mdi:cube-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "sm3",
+        "chinese",
+        "national",
+        "国密",
+        "哈希",
+        "gm"
+      ],
+      "description": "SM3 中国国密密码杂凑算法（GM/T 0004）",
+      "path": "tools/Sm3Hash.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "blake2-hash",
+      "name": "BLAKE2 Hash",
+      "nameZh": "BLAKE2 哈希",
+      "icon": "mdi:fingerprint",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "blake2",
+        "blake2s",
+        "hash",
+        "哈希",
+        "快速"
+      ],
+      "description": "BLAKE2s 快速加密哈希（256/224/160 位）",
+      "path": "tools/Blake2Hash.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "chacha20-encryption",
+      "name": "ChaCha20 Encryption",
+      "nameZh": "ChaCha20 加密",
+      "icon": "mdi:lock-clock",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "chacha20",
+        "salsa",
+        "stream",
+        "cipher",
+        "流密码",
+        "加密"
+      ],
+      "description": "ChaCha20 流密码加密解密",
+      "path": "tools/Chacha20Encryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "scrypt-generator",
+      "name": "scrypt Generator",
+      "nameZh": "scrypt 密钥派生",
+      "icon": "mdi:memory",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "scrypt",
+        "kdf",
+        "key",
+        "derivation",
+        "asic",
+        "resistant"
+      ],
+      "description": "scrypt 内存困难型密钥派生（N/r/p 参数可调）",
+      "path": "tools/ScryptGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "hash-file",
+      "name": "File Hash",
+      "nameZh": "文件哈希计算",
+      "icon": "mdi:file-check-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "file",
+        "hash",
+        "sha",
+        "md5",
+        "checksum",
+        "文件",
+        "校验"
+      ],
+      "description": "计算文件的多种哈希值（SHA-1/256/384/512 + MD5）",
+      "path": "tools/HashFile.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
     }
   ],
-  "version": "v1.3.0"
+  "version": "v1.4.0"
 }
