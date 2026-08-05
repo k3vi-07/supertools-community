@@ -1,6 +1,6 @@
 {
   "name": "SuperTools 社区工具仓库",
-  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 30 个工具",
+  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 43 个工具",
   "tools": [
     {
       "id": "json-to-xml",
@@ -615,7 +615,241 @@
       "path": "tools/FloatConverter.vue",
       "author": "k3vi-07",
       "version": "v1.2.0"
+    },
+    {
+      "id": "cron-generator",
+      "name": "Cron Generator",
+      "nameZh": "Cron 表达式生成器",
+      "icon": "mdi:clock-time-four-outline",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "cron",
+        "schedule",
+        "crontab",
+        "定时",
+        "表达式"
+      ],
+      "description": "交互式生成 Cron 定时表达式",
+      "path": "tools/CronGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "http-status-code",
+      "name": "HTTP Status Code",
+      "nameZh": "HTTP 状态码速查",
+      "icon": "mdi:web",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "http",
+        "status",
+        "code",
+        "响应码",
+        "状态码"
+      ],
+      "description": "HTTP 状态码分类速查表",
+      "path": "tools/HttpStatusCode.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "regex-cheat-sheet",
+      "name": "Regex Cheat Sheet",
+      "nameZh": "正则表达式速查",
+      "icon": "mdi:regex",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "regex",
+        "regular",
+        "expression",
+        "正则",
+        "速查"
+      ],
+      "description": "正则表达式语法速查表",
+      "path": "tools/RegexCheatSheet.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "mime-types",
+      "name": "MIME Types",
+      "nameZh": "MIME 类型查询",
+      "icon": "mdi:file-find-outline",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "mime",
+        "type",
+        "content-type",
+        "文件类型"
+      ],
+      "description": "文件扩展名与 MIME 类型互查",
+      "path": "tools/MimeTypes.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "text-dedup",
+      "name": "Text Dedup",
+      "nameZh": "文本行去重",
+      "icon": "mdi:format-list-bulleted",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "dedup",
+        "unique",
+        "去重",
+        "重复"
+      ],
+      "description": "文本行去重，保留首次出现顺序",
+      "path": "tools/TextDedup.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "text-sort",
+      "name": "Text Sort",
+      "nameZh": "文本排序",
+      "icon": "mdi:sort-alphabetical-ascending",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "sort",
+        "order",
+        "排序",
+        "排列"
+      ],
+      "description": "文本行排序（升序/降序/自然/随机）",
+      "path": "tools/TextSort.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "markdown-to-html",
+      "name": "Markdown to HTML",
+      "nameZh": "Markdown 转 HTML",
+      "icon": "mdi:language-markdown",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "markdown",
+        "html",
+        "md",
+        "转换"
+      ],
+      "description": "Markdown 转换为 HTML 代码",
+      "path": "tools/MarkdownToHtml.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "html-to-markdown",
+      "name": "HTML to Markdown",
+      "nameZh": "HTML 转 Markdown",
+      "icon": "mdi:language-html5",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "html",
+        "markdown",
+        "md",
+        "转换"
+      ],
+      "description": "HTML 转换为 Markdown 格式",
+      "path": "tools/HtmlToMarkdown.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "password-strength",
+      "name": "Password Strength",
+      "nameZh": "密码强度检测",
+      "icon": "mdi:shield-check-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "password",
+        "strength",
+        "密码",
+        "强度",
+        "安全"
+      ],
+      "description": "检测密码强度、熵值和破解时间",
+      "path": "tools/PasswordStrength.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "csp-generator",
+      "name": "CSP Generator",
+      "nameZh": "CSP 生成器",
+      "icon": "mdi:shield-lock-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "csp",
+        "content-security-policy",
+        "安全",
+        "header"
+      ],
+      "description": "Content-Security-Policy 头生成器",
+      "path": "tools/CspGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "sql-injection-checker",
+      "name": "SQL Injection Checker",
+      "nameZh": "SQL 注入检测",
+      "icon": "mdi:database-alert-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "sql",
+        "injection",
+        "sqli",
+        "注入",
+        "安全"
+      ],
+      "description": "SQL 注入风险模式检测",
+      "path": "tools/SqlInjectionChecker.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "regex-tester",
+      "name": "Regex Tester",
+      "nameZh": "正则表达式测试",
+      "icon": "mdi:regex",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "regex",
+        "test",
+        "正则",
+        "测试",
+        "匹配"
+      ],
+      "description": "实时测试正则表达式匹配结果",
+      "path": "tools/RegexTester.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
     }
   ],
-  "version": "v1.2.0"
+  "version": "v1.3.0"
 }
