@@ -1,6 +1,6 @@
 {
   "name": "SuperTools 社区工具仓库",
-  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 51 个工具",
+  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 63 个工具",
   "tools": [
     {
       "id": "json-to-xml",
@@ -1015,7 +1015,269 @@
       "path": "tools/HashFile.vue",
       "author": "k3vi-07",
       "version": "v1.4.0"
+    },
+    {
+      "id": "json-schema-generator",
+      "name": "JSON Schema Generator",
+      "nameZh": "JSON Schema 生成器",
+      "icon": "mdi:code-braces",
+      "category": [
+        "json"
+      ],
+      "keywords": [
+        "json",
+        "schema",
+        "generator",
+        "生成",
+        "类型"
+      ],
+      "description": "从 JSON 数据自动推断生成 JSON Schema",
+      "path": "tools/JsonSchemaGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "http-tester",
+      "name": "HTTP Tester",
+      "nameZh": "HTTP 请求测试器",
+      "icon": "mdi:send",
+      "category": [
+        "network"
+      ],
+      "keywords": [
+        "http",
+        "request",
+        "api",
+        "test",
+        "请求",
+        "测试",
+        "fetch"
+      ],
+      "description": "发送 HTTP 请求，查看响应状态、耗时和内容",
+      "path": "tools/HttpTester.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "css-unit-converter",
+      "name": "CSS Unit Converter",
+      "nameZh": "CSS 单位转换器",
+      "icon": "mdi:ruler",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "css",
+        "unit",
+        "px",
+        "rem",
+        "em",
+        "vw",
+        "vh",
+        "单位",
+        "转换"
+      ],
+      "description": "在 px/rem/em/pt/vw/vh 之间相互转换",
+      "path": "tools/CssUnitConverter.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "uuid-comparer",
+      "name": "UUID Generator Pro",
+      "nameZh": "UUID 多版本生成",
+      "icon": "mdi:identifier",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "uuid",
+        "guid",
+        "v4",
+        "nil",
+        "生成",
+        "唯一"
+      ],
+      "description": "生成 UUID v4 / nil，支持大写、花括号、去横线格式",
+      "path": "tools/UuidComparer.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "line-reverser",
+      "name": "Line Reverser",
+      "nameZh": "多行文本反转",
+      "icon": "mdi:format-align-justify",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "reverse",
+        "line",
+        "text",
+        "反转",
+        "倒序",
+        "行"
+      ],
+      "description": "按行反转、每行字符反转、单词反转等多种模式",
+      "path": "tools/LineReverser.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "text-case-batch",
+      "name": "Text Case Batch",
+      "nameZh": "批量大小写转换",
+      "icon": "mdi:format-text",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "case",
+        "upper",
+        "lower",
+        "camel",
+        "snake",
+        "kebab",
+        "大小写",
+        "转换"
+      ],
+      "description": "12 种命名风格一键转换：驼峰、下划线、短横线等",
+      "path": "tools/TextCaseBatch.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "text-encryptor",
+      "name": "Text Encryptor",
+      "nameZh": "文本加密器",
+      "icon": "mdi:lock-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "encrypt",
+        "decrypt",
+        "xor",
+        "base64",
+        "加密",
+        "解密"
+      ],
+      "description": "XOR 加密 + Base64 编码，无需外部依赖",
+      "path": "tools/TextEncryptor.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "string-escape-pro",
+      "name": "String Escape Pro",
+      "nameZh": "文本转义工具",
+      "icon": "mdi:format-quote-close",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "escape",
+        "unicode",
+        "html",
+        "url",
+        "hex",
+        "js",
+        "转义",
+        "编码"
+      ],
+      "description": "HTML 实体/URL/Unicode/Hex/JS 字符串转义",
+      "path": "tools/StringEscapePro.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "xss-sanitizer",
+      "name": "XSS Sanitizer",
+      "nameZh": "XSS 净化器",
+      "icon": "mdi:shield-alert",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "xss",
+        "security",
+        "sanitize",
+        "html",
+        "安全",
+        "净化",
+        "过滤"
+      ],
+      "description": "检测和净化 XSS 攻击代码，移除危险标签和事件",
+      "path": "tools/XssSanitizer.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "base64-image",
+      "name": "Base64 Image",
+      "nameZh": "Base64 图片互转",
+      "icon": "mdi:image",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "base64",
+        "image",
+        "png",
+        "jpg",
+        "图片",
+        "转换",
+        "data-url"
+      ],
+      "description": "图片与 Base64 互转，支持拖拽上传和预览",
+      "path": "tools/Base64Image.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "color-extractor",
+      "name": "Color Extractor",
+      "nameZh": "颜色提取器",
+      "icon": "mdi:eyedropper",
+      "category": [
+        "color"
+      ],
+      "keywords": [
+        "color",
+        "css",
+        "hex",
+        "rgb",
+        "extract",
+        "颜色",
+        "提取"
+      ],
+      "description": "从 CSS/HTML 代码中提取所有颜色值",
+      "path": "tools/ColorExtractor.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "cron-generator-pro",
+      "name": "Cron Generator Pro",
+      "nameZh": "Cron 表达式生成器",
+      "icon": "mdi:clock-time-eight",
+      "category": [
+        "datetime"
+      ],
+      "keywords": [
+        "cron",
+        "schedule",
+        "timer",
+        "crontab",
+        "定时",
+        "表达式"
+      ],
+      "description": "可视化生成 Cron 表达式，预设常用模式",
+      "path": "tools/CronGeneratorPro.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
     }
   ],
-  "version": "v1.4.0"
+  "version": "v1.5.0"
 }
