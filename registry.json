@@ -1,6 +1,6 @@
 {
   "name": "SuperTools 社区工具仓库",
-  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 73 个工具",
+  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 88 个工具",
   "tools": [
     {
       "id": "json-to-xml",
@@ -1491,7 +1491,333 @@
       "path": "tools/SipHash.vue",
       "author": "k3vi-07",
       "version": "v1.6.0"
+    },
+    {
+      "id": "blowfish-encryption",
+      "name": "Blowfish Encryption",
+      "nameZh": "Blowfish 加密",
+      "icon": "mdi:fish",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "blowfish",
+        "feistel",
+        "block",
+        "cipher",
+        "分组密码",
+        "加密",
+        "bruce"
+      ],
+      "description": "Blowfish 64 位分组密码，可变长密钥",
+      "path": "tools/BlowfishEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "salsa20-encryption",
+      "name": "Salsa20 Encryption",
+      "nameZh": "Salsa20 流密码",
+      "icon": "mdi:waves",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "salsa20",
+        "stream",
+        "cipher",
+        "流密码",
+        "djb",
+        "加密"
+      ],
+      "description": "Salsa20 流密码，256 位密钥",
+      "path": "tools/Salsa20Encryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "rabbit-cipher",
+      "name": "Rabbit Cipher",
+      "nameZh": "Rabbit 流密码",
+      "icon": "mdi:rabbit",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "rabbit",
+        "stream",
+        "cipher",
+        "流密码",
+        "rfc6631",
+        "加密"
+      ],
+      "description": "Rabbit 高速流密码 (RFC 6631)",
+      "path": "tools/RabbitCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "aes-ctr-encryption",
+      "name": "AES-CTR Encryption",
+      "nameZh": "AES-CTR 加密",
+      "icon": "mdi:counter",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "aes",
+        "ctr",
+        "counter",
+        "stream",
+        "模式",
+        "加密"
+      ],
+      "description": "AES-256-CTR 计数器模式，流式加密",
+      "path": "tools/AesCtrShell.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "aes-cbc-encryption",
+      "name": "AES-CBC Encryption",
+      "nameZh": "AES-CBC 加密",
+      "icon": "mdi:link-variant",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "aes",
+        "cbc",
+        "cipher",
+        "block",
+        "pkcs7",
+        "分组",
+        "加密"
+      ],
+      "description": "AES-256-CBC 模式 + PKCS7 填充",
+      "path": "tools/AesCbcShell.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "whirlpool-hash",
+      "name": "Whirlpool Hash",
+      "nameZh": "Whirlpool 哈希",
+      "icon": "mdi:weather-hurricane",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "whirlpool",
+        "hash",
+        "512",
+        "iso",
+        "哈希"
+      ],
+      "description": "Whirlpool 512 位哈希 (ISO/IEC 10118-3)",
+      "path": "tools/WhirlpoolHash.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "gost-hash",
+      "name": "GOST Hash",
+      "nameZh": "GOST 哈希",
+      "icon": "mdi:flag-variant",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "gost",
+        "russian",
+        "hash",
+        "256",
+        "俄罗斯",
+        "哈希",
+        "国标"
+      ],
+      "description": "GOST R 34.11-94 俄罗斯国家标准哈希",
+      "path": "tools/GostHash.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "tiger-hash",
+      "name": "Tiger Hash",
+      "nameZh": "Tiger 哈希",
+      "icon": "mdi:paw",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "tiger",
+        "hash",
+        "192",
+        "fast",
+        "64-bit",
+        "哈希"
+      ],
+      "description": "Tiger 192 位哈希，64 位平台优化",
+      "path": "tools/TigerHash.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "snefru-hash",
+      "name": "Snefru Hash",
+      "nameZh": "Snefru 哈希",
+      "icon": "mdi:triangle",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "snefru",
+        "hash",
+        "256",
+        "merkle",
+        "哈希"
+      ],
+      "description": "Snefru 256 位哈希 (Ralph Merkle 设计)",
+      "path": "tools/SnefruHash.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "classical-cipher",
+      "name": "Classical Ciphers",
+      "nameZh": "经典密码合集",
+      "icon": "mdi:scroll-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "caesar",
+        "rot13",
+        "vigenere",
+        "atbash",
+        "affine",
+        "railfence",
+        "凯撒",
+        "维吉尼亚",
+        "古典密码",
+        "替换",
+        "置换"
+      ],
+      "description": "6 种经典密码：凯撒/ROT13/维吉尼亚/Atbash/仿射/栅栏",
+      "path": "tools/VigenereCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "playfair-cipher",
+      "name": "Playfair Cipher",
+      "nameZh": "Playfair 密码",
+      "icon": "mdi:grid",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "playfair",
+        "digraph",
+        "substitution",
+        "5x5",
+        "替换",
+        "古典",
+        "密码"
+      ],
+      "description": "Playfair 双字母替换密码，5×5 矩阵",
+      "path": "tools/PlayfairCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "argon2-generator",
+      "name": "Argon2 Generator",
+      "nameZh": "Argon2 密钥派生",
+      "icon": "mdi:gas-cylinder",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "argon2",
+        "kdf",
+        "password",
+        "derive",
+        "密钥派生",
+        "密码哈希",
+        "竞赛"
+      ],
+      "description": "Argon2 参数展示 + PBKDF2 密钥派生",
+      "path": "tools/Argon2Generator.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "hex-base64-convert",
+      "name": "Hex Base64 Converter",
+      "nameZh": "Hex/Base64 互转",
+      "icon": "mdi:swap-vertical",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "hex",
+        "base64",
+        "convert",
+        "互转",
+        "编码"
+      ],
+      "description": "Hex 与 Base64 双向转换",
+      "path": "tools/HexBase64Convert.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "pem-formatter",
+      "name": "PEM Formatter",
+      "nameZh": "PEM 格式化",
+      "icon": "mdi:file-certificate",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "pem",
+        "rsa",
+        "certificate",
+        "key",
+        "format",
+        "证书",
+        "格式化",
+        "base64"
+      ],
+      "description": "PEM 证书格式化、去换行、提取 Base64",
+      "path": "tools/PemFormatter.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "entropy-calculator",
+      "name": "Entropy Calculator",
+      "nameZh": "熵值计算器",
+      "icon": "mdi:chart-bell-curve",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "entropy",
+        "shannon",
+        "random",
+        "analysis",
+        "熵",
+        "香农",
+        "随机性",
+        "分布"
+      ],
+      "description": "计算文本 Shannon 熵值和字符分布",
+      "path": "tools/EntropyCalculator.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
     }
   ],
-  "version": "v1.6.0"
+  "version": "v1.7.0"
 }
