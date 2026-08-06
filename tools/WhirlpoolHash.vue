@@ -44,7 +44,7 @@ const SBOX = [
 const RC = [
   0x1823c6e887b8014fn, 0x36a6d2f5796f9152n, 0x60bc9b8ea30c7b35n, 0x1de0d7c22e4bfe57n,
   0x157737e59ff04ad9n, 0xe35d281356c4888an, 0xdbb25492aa1d6f9en, 0x7e3c9c2b6d2d2b28n,
-  0x58ee39b0811f4cfe
+  0x58ee39b0811f4cfen, 0x51397c4b1e4efbb1n
 ]
 
 // 64-bit 循环右移

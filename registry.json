@@ -1,6 +1,6 @@
 {
   "name": "SuperTools 社区工具仓库",
-  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 88 个工具",
+  "description": "SuperTools 开发者工具箱的社区远程工具集合 - 93 个工具",
   "tools": [
     {
       "id": "json-to-xml",
@@ -1557,49 +1557,6 @@
       "version": "v1.7.0"
     },
     {
-      "id": "aes-ctr-encryption",
-      "name": "AES-CTR Encryption",
-      "nameZh": "AES-CTR 加密",
-      "icon": "mdi:counter",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "aes",
-        "ctr",
-        "counter",
-        "stream",
-        "模式",
-        "加密"
-      ],
-      "description": "AES-256-CTR 计数器模式，流式加密",
-      "path": "tools/AesCtrShell.vue",
-      "author": "k3vi-07",
-      "version": "v1.7.0"
-    },
-    {
-      "id": "aes-cbc-encryption",
-      "name": "AES-CBC Encryption",
-      "nameZh": "AES-CBC 加密",
-      "icon": "mdi:link-variant",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "aes",
-        "cbc",
-        "cipher",
-        "block",
-        "pkcs7",
-        "分组",
-        "加密"
-      ],
-      "description": "AES-256-CBC 模式 + PKCS7 填充",
-      "path": "tools/AesCbcShell.vue",
-      "author": "k3vi-07",
-      "version": "v1.7.0"
-    },
-    {
       "id": "whirlpool-hash",
       "name": "Whirlpool Hash",
       "nameZh": "Whirlpool 哈希",
@@ -1815,6 +1772,158 @@
       ],
       "description": "计算文本 Shannon 熵值和字符分布",
       "path": "tools/EntropyCalculator.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "city-hash",
+      "name": "CityHash",
+      "nameZh": "CityHash 哈希",
+      "icon": "mdi:city",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "cityhash",
+        "google",
+        "hash",
+        "64",
+        "128",
+        "seed",
+        "非加密",
+        "哈希表"
+      ],
+      "description": "Google CityHash 非加密哈希 (64 位 / 128 位，支持 seed)",
+      "path": "tools/CityHash.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "bcrypt-checker",
+      "name": "BCrypt Checker",
+      "nameZh": "BCrypt 验证器",
+      "icon": "mdi:lock-check",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "bcrypt",
+        "password",
+        "verify",
+        "salt",
+        "cost",
+        "密码",
+        "验证",
+        "哈希"
+      ],
+      "description": "解析并验证 BCrypt 密码哈希 ($2a$10$...)",
+      "path": "tools/BcryptChecker.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "aes-ctr-encryption",
+      "name": "AES-CTR Encryption",
+      "nameZh": "AES-CTR 加密",
+      "icon": "mdi:counter",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "aes",
+        "ctr",
+        "counter",
+        "stream",
+        "加密",
+        "计数器"
+      ],
+      "description": "AES-256-CTR 计数器模式流加密",
+      "path": "tools/AesCtrEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "aes-cbc-encryption",
+      "name": "AES-CBC Encryption",
+      "nameZh": "AES-CBC 加密",
+      "icon": "mdi:link-variant",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "aes",
+        "cbc",
+        "block",
+        "pkcs7",
+        "加密",
+        "分组"
+      ],
+      "description": "AES-256-CBC + PKCS7 填充",
+      "path": "tools/AesCbcEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "twofish-encryption",
+      "name": "Twofish Encryption",
+      "nameZh": "Twofish 加密",
+      "icon": "mdi:fishbowl",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "twofish",
+        "aes-finalist",
+        "block",
+        "128",
+        "分组密码",
+        "加密"
+      ],
+      "description": "Twofish 128 位分组密码 (AES 候选)",
+      "path": "tools/TwofishEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "idea-encryption",
+      "name": "IDEA Encryption",
+      "nameZh": "IDEA 加密",
+      "icon": "mdi:lightbulb-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "idea",
+        "international",
+        "data",
+        "encryption",
+        "block",
+        "分组",
+        "加密"
+      ],
+      "description": "IDEA 国际数据加密算法",
+      "path": "tools/IdeaEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "tea-encryption",
+      "name": "TEA Encryption",
+      "nameZh": "TEA 加密",
+      "icon": "mdi:tea",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "tea",
+        "tiny",
+        "encryption",
+        "feistel",
+        "轻量级",
+        "加密"
+      ],
+      "description": "TEA (Tiny Encryption Algorithm) 轻量级分组密码",
+      "path": "tools/TeaEncryption.vue",
       "author": "k3vi-07",
       "version": "v1.7.0"
     }

@@ -204,32 +204,32 @@ function F(S, x) {
   return ((((S[0][a] + S[1][b]) >>> 0) ^ S[2][c]) + S[3][d]) >>> 0
 }
 
-// Encrypt a single 64-bit block (L, R both 32-bit, unsigned)
-function encryptBlock(P, S, L, R) {
-  for (let i = 0; i < 16; i += 2) {
-    L = (L ^ P[i]) >>> 0
-    R = (F(S, L) ^ R) >>> 0
-    R = (R ^ P[i + 1]) >>> 0
-    L = (F(S, R) ^ L) >>> 0
+// Encrypt a single 64-bit block (L, R both 32-bit, unsigned).
+// Standard Blowfish: 16 rounds with P[0..15], swap halves each round,
+// undo final swap, then whiten with P[16]^R, P[17]^L.
+function encryptBlock(P, S, xL, xR) {
+  for (let i = 0; i < 16; i++) {
+    xL = (xL ^ P[i]) >>> 0
+    xR = (F(S, xL) ^ xR) >>> 0
+    const t = xL; xL = xR; xR = t // swap halves
   }
-  const tmp = R
-  R = (L ^ P[17]) >>> 0
-  L = (tmp ^ P[16]) >>> 0
-  return [L, R]
+  const t = xL; xL = xR; xR = t // undo final swap
+  xR = (xR ^ P[16]) >>> 0
+  xL = (xL ^ P[17]) >>> 0
+  return [xL, xR]
 }
 
-// Decrypt a single 64-bit block
-function decryptBlock(P, S, L, R) {
-  for (let i = 16; i > 0; i -= 2) {
-    L = (L ^ P[i + 1]) >>> 0
-    R = (F(S, L) ^ R) >>> 0
-    R = (R ^ P[i]) >>> 0
-    L = (F(S, R) ^ L) >>> 0
+// Decrypt a single 64-bit block. Mirrors encryption using P[17..2], then P[1]^R, P[0]^L.
+function decryptBlock(P, S, xL, xR) {
+  for (let i = 17; i > 1; i--) {
+    xL = (xL ^ P[i]) >>> 0
+    xR = (F(S, xL) ^ xR) >>> 0
+    const t = xL; xL = xR; xR = t // swap halves
   }
-  const tmp = R
-  R = (L ^ P[1]) >>> 0
-  L = (tmp ^ P[0]) >>> 0
-  return [L, R]
+  const t = xL; xL = xR; xR = t // undo final swap
+  xR = (xR ^ P[1]) >>> 0
+  xL = (xL ^ P[0]) >>> 0
+  return [xL, xR]
 }
 
 function hexToBytes(hex) {
