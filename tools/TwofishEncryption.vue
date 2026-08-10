@@ -94,42 +94,41 @@ function g(sboxes, x) {
 }
 
 const rotl = (x, n) => ((x << n) | (x >>> (32 - n))) >>> 0
-const ror = (x, n) => ((x >>> n) | (x << (32 - n))) >>> 0
 
-// Twofish round function: simplified 16-round Feistel with two g-functions
-function encryptBlock(R0, R1, R2, R3, K, sboxes) {
+// Simplified Twofish-style round function: a two-branch Feistel whose F function
+// uses the key-dependent S-boxes. State is (L0, L1, R0, R1). Each round:
+//   t0 = g(L0); t1 = rotl(g(L1), 8)
+//   F  = (t0 + t1 + K[8 + r]) mod 2^32
+//   (L0, L1, R0, R1) <- (R0 ^ F, R1 ^ F, L0, L1)
+// This is cleanly invertible: see decryptBlock.
+function encryptBlock(L0, L1, R0, R1, K, sboxes) {
   for (let r = 0; r < 16; r++) {
-    const t0 = g(sboxes, R0)
-    const t1 = rotl(g(sboxes, R1), 8)
-    const F0 = (t0 + t1 + K[8 + r]) >>> 0
-    const F1 = (t0 + (t1 * 2) + K[8 + ((r + 1) % 16) + 8]) >>> 0
-    // swap halves
-    const nR2 = (ror(F0 ^ R2, 1)) >>> 0
-    const nR3 = (rotl(R3, 1) ^ F1) >>> 0
-    R0 = R2; R1 = R3
-    R2 = nR2; R3 = nR3
-    // Also apply whitening subkeys K[2r], K[2r+1] in simplified manner
-    R0 = (R0 ^ K[r * 2 % 40]) >>> 0
-    R1 = (R1 ^ K[(r * 2 + 1) % 40]) >>> 0
+    const t0 = g(sboxes, L0)
+    const t1 = rotl(g(sboxes, L1), 8)
+    const F = (t0 + t1 + K[8 + r]) >>> 0
+    const oL0 = L0, oL1 = L1
+    L0 = (R0 ^ F) >>> 0
+    L1 = (R1 ^ F) >>> 0
+    R0 = oL0
+    R1 = oL1
   }
-  // Final swap undo + output whitening
-  return [R2, R3, R0, R1]
+  return [L0, L1, R0, R1]
 }
 
-function decryptBlock(R0, R1, R2, R3, K, sboxes) {
+// Inverse of encryptBlock, run with rounds in reverse.
+// From one encryption round: newR0 = oldL0, so oldL0 = currentR0.
+// F is recomputed from oldL0 (= currentR0), then oldR0 = currentL0 ^ F.
+function decryptBlock(L0, L1, R0, R1, K, sboxes) {
   for (let r = 15; r >= 0; r--) {
-    R0 = (R0 ^ K[r * 2 % 40]) >>> 0
-    R1 = (R1 ^ K[(r * 2 + 1) % 40]) >>> 0
-    const t0 = g(sboxes, R0)
-    const t1 = rotl(g(sboxes, R1), 8)
-    const F0 = (t0 + t1 + K[8 + r]) >>> 0
-    const F1 = (t0 + (t1 * 2) + K[8 + ((r + 1) % 16) + 8]) >>> 0
-    const oR2 = (rotl(F0 ^ R2, 1)) >>> 0
-    const oR3 = (ror(R3, 1) ^ F1) >>> 0
-    R2 = R0; R3 = R1
-    R0 = oR2; R1 = oR3
+    const oL0 = R0, oL1 = R1
+    const t0 = g(sboxes, oL0)
+    const t1 = rotl(g(sboxes, oL1), 8)
+    const F = (t0 + t1 + K[8 + r]) >>> 0
+    const oR0 = (L0 ^ F) >>> 0
+    const oR1 = (L1 ^ F) >>> 0
+    L0 = oL0; L1 = oL1; R0 = oR0; R1 = oR1
   }
-  return [R2, R3, R0, R1]
+  return [L0, L1, R0, R1]
 }
 
 function hexToBytes(hex) {

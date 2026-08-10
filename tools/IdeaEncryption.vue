@@ -87,73 +87,66 @@ function expandKey(keyBytes) {
   return subkeys
 }
 
-// Compute decryption subkeys from encryption subkeys
-function invertSubkeys(encKeys) {
-  const dec = new Array(52)
-  for (let r = 0; r < 9; r++) {
-    const encOff = r * 6
-    const decOff = (8 - r) * 6
-    if (r === 0) {
-      dec[decOff + 0] = mulInv(encKeys[encOff + 0])
-      dec[decOff + 1] = addInv(encKeys[encOff + 1])
-      dec[decOff + 2] = addInv(encKeys[encOff + 2])
-      dec[decOff + 3] = mulInv(encKeys[encOff + 3])
-    } else {
-      // For rounds 1..7 the two middle keys are swapped
-      dec[decOff + 0] = mulInv(encKeys[encOff + 0])
-      dec[decOff + 1] = addInv(encKeys[encOff + 2])
-      dec[decOff + 2] = addInv(encKeys[encOff + 1])
-      dec[decOff + 3] = mulInv(encKeys[encOff + 3])
-    }
-    if (r < 8) {
-      // The half-round subkeys
-      dec[decOff + 4] = encKeys[encOff - 2 + 6] // maps to next round's MA keys, simplified
-      dec[decOff + 5] = encKeys[encOff - 1 + 6]
-    }
+// Compute decryption subkeys from encryption subkeys (Schneier, Applied Cryptography).
+// Decryption round 1 mirrors the output transform (no middle swap),
+// rounds 2..8 mirror encryption rounds 8..2 (with the two middle keys swapped),
+// and round 9 (output transform of decrypt) mirrors encryption round 1 (no swap, no MA).
+function invertSubkeys(K) {
+  const DK = new Array(52).fill(0)
+  // Decryption round 1 — mirrors output transform, MA keys from encryption round 8
+  DK[0] = mulInv(K[48]); DK[1] = addInv(K[49]); DK[2] = addInv(K[50]); DK[3] = mulInv(K[51])
+  DK[4] = K[46]; DK[5] = K[47]
+  // Decryption rounds 2..8 — mirror encryption rounds 8..2, with middle swap
+  for (let r = 2; r <= 8; r++) {
+    const e = 10 - r                    // encryption round mirrored (8..2)
+    const eoff = 6 * (e - 1)
+    const doff = 6 * (r - 1)
+    DK[doff + 0] = mulInv(K[eoff + 0])
+    DK[doff + 1] = addInv(K[eoff + 2])  // middle swap
+    DK[doff + 2] = addInv(K[eoff + 1])
+    DK[doff + 3] = mulInv(K[eoff + 3])
+    // MA keys come from the encryption round preceding the mirrored one
+    const mae = 6 * (e - 1 - 1)
+    DK[doff + 4] = K[mae + 4]
+    DK[doff + 5] = K[mae + 5]
   }
-  // Handle the MA subkeys (positions 4,5 of each round) properly.
-  // Rebuild cleanly: round r (0..7) uses encKeys[r*6+4], encKeys[r*6+5].
-  // Decryption round (8-r) should use the SAME MA keys as encryption round r.
-  for (let r = 0; r < 8; r++) {
-    const decOff = (8 - r) * 6
-    dec[decOff + 4] = encKeys[r * 6 + 4]
-    dec[decOff + 5] = encKeys[r * 6 + 5]
-  }
-  return dec
+  // Decryption output transform — mirrors encryption round 1, no MA keys
+  DK[48] = mulInv(K[0]); DK[49] = addInv(K[1]); DK[50] = addInv(K[2]); DK[51] = mulInv(K[3])
+  return DK
 }
 
-// IDEA cipher on 4 16-bit words. keys = 52 subkeys.
-function ideaCipher(x0, x1, x2, x3, keys) {
+// IDEA cipher (Lai–Massey scheme) on four 16-bit words. keys = 52 subkeys.
+function ideaCipher(x1, x2, x3, x4, keys) {
   for (let r = 0; r < 8; r++) {
     const off = r * 6
-    // Apply key mixing
-    x0 = mul(x0, keys[off + 0])
-    x1 = (x1 + keys[off + 1]) & 0xffff
-    x2 = (x2 + keys[off + 2]) & 0xffff
-    x3 = mul(x3, keys[off + 3])
-    // MA structure
-    const t1 = x0 ^ x2
-    const t2 = x1 ^ x3
+    // Initial key mixing on the 4 words
+    const s1 = mul(x1, keys[off + 0])
+    const s2 = (x2 + keys[off + 1]) & 0xffff
+    const s3 = (x3 + keys[off + 2]) & 0xffff
+    const s4 = mul(x4, keys[off + 3])
+    // MA (Multiplication-Addition) structure
+    const t1 = s1 ^ s3
+    const t2 = s2 ^ s4
     const m1 = mul(t1, keys[off + 4])
-    const m2 = mul(m1, t2)
-    const m3 = mul(m1 + m2, keys[off + 5])
-    const t3 = (m1 + m3) & 0xffff
-    // Cross swap
-    x0 = x0 ^ m2
-    x2 = x2 ^ m2
-    x1 = x1 ^ t3
-    x3 = x3 ^ t3
-    // Swap x1 and x2 (except after last round)
+    const m2 = mul((m1 + t2) & 0xffff, keys[off + 5])
+    const out2 = (m1 + m2) & 0xffff
+    // Route MA outputs back: s1 & s3 get m2, s2 & s4 get (m1+m2)
+    x1 = s1 ^ m2
+    x2 = s2 ^ out2
+    x3 = s3 ^ m2
+    x4 = s4 ^ out2
+    // Swap the middle two words between rounds (not after the last round)
     if (r < 7) {
-      const tmp = x1; x1 = x2; x2 = tmp
+      const tmp = x2; x2 = x3; x3 = tmp
     }
   }
-  // Final output transformation (keys[48..51])
-  const y0 = mul(x0, keys[48])
-  const y1 = (x2 + keys[49]) & 0xffff // note swap of x1/x2 already done
-  const y2 = (x1 + keys[50]) & 0xffff
-  const y3 = mul(x3, keys[51])
-  return [y0, y1, y2, y3]
+  // Output transformation: mul/add/mul/add on (x1,x2,x3,x4)
+  return [
+    mul(x1, keys[48]),
+    (x2 + keys[49]) & 0xffff,
+    (x3 + keys[50]) & 0xffff,
+    mul(x4, keys[51])
+  ]
 }
 
 function hexToBytes(hex) {

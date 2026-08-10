@@ -3,334 +3,127 @@
   "description": "SuperTools 开发者工具箱的社区远程工具集合 - 93 个工具",
   "tools": [
     {
-      "id": "json-to-xml",
-      "name": "JSON to XML",
-      "nameZh": "JSON 转 XML",
-      "icon": "mdi:file-xml-box",
-      "category": [
-        "json"
-      ],
-      "keywords": [
-        "json",
-        "xml",
-        "convert",
-        "转换"
-      ],
-      "description": "将 JSON 数据转换为 XML 格式",
-      "path": "tools/JsonToXml.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "text-to-speech",
-      "name": "Text to Speech",
-      "nameZh": "文本转语音",
-      "icon": "mdi:volume-high",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "tts",
-        "speech",
-        "audio",
-        "语音",
-        "朗读"
-      ],
-      "description": "使用浏览器 Web Speech API 朗读文本",
-      "path": "tools/TextToSpeech.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "number-to-chinese",
-      "name": "Number to Chinese",
-      "nameZh": "数字转中文大写",
-      "icon": "mdi:currency-cny",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "number",
-        "chinese",
-        "金额",
-        "大写",
-        "人民币"
-      ],
-      "description": "将阿拉伯数字转换为中文大写金额",
-      "path": "tools/NumberToChinese.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "chinese-to-pinyin",
-      "name": "Chinese to Pinyin",
-      "nameZh": "中文转拼音",
-      "icon": "mdi:translate",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "pinyin",
-        "chinese",
-        "拼音",
-        "中文"
-      ],
-      "description": "将中文汉字转换为拼音首字母",
-      "path": "tools/ChineseToPinyin.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "emoji-picker",
-      "name": "Emoji Picker",
-      "nameZh": "Emoji 表情选择器",
-      "icon": "mdi:emoticon-outline",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "emoji",
-        "表情",
-        "picker",
-        "symbol"
-      ],
-      "description": "搜索和复制 Emoji 表情符号",
-      "path": "tools/EmojiPicker.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "unit-converter",
-      "name": "Unit Converter",
-      "nameZh": "单位换算器",
-      "icon": "mdi:ruler",
-      "category": [
-        "web"
-      ],
-      "keywords": [
-        "unit",
-        "convert",
-        "length",
-        "weight",
-        "temperature",
-        "单位",
-        "换算"
-      ],
-      "description": "长度/重量/温度/面积/速度/数据单位换算",
-      "path": "tools/UnitConverter.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "loan-calculator",
-      "name": "Loan Calculator",
-      "nameZh": "房贷计算器",
-      "icon": "mdi:calculator",
-      "category": [
-        "web"
-      ],
-      "keywords": [
-        "loan",
-        "mortgage",
-        "calculator",
-        "房贷",
-        "贷款"
-      ],
-      "description": "等额本息房贷月供计算",
-      "path": "tools/LoanCalculator.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "hash-lookup",
-      "name": "Hash Lookup",
-      "nameZh": "哈希值识别",
-      "icon": "mdi:shield-search",
+      "id": "aes-cbc-encryption",
+      "name": "AES-CBC Encryption",
+      "nameZh": "AES-CBC 加密",
+      "icon": "mdi:link-variant",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "hash",
-        "identify",
-        "detect",
-        "识别",
-        "哈希类型"
+        "aes",
+        "cbc",
+        "block",
+        "pkcs7",
+        "加密",
+        "分组"
       ],
-      "description": "识别哈希值类型和可能的加密算法",
-      "path": "tools/HashLookup.vue",
+      "description": "AES-256-CBC + PKCS7 填充",
+      "path": "tools/AesCbcEncryption.vue",
       "author": "k3vi-07",
-      "version": "v1.2.0"
+      "version": "v1.7.0"
     },
     {
-      "id": "chmod-calculator",
-      "name": "Chmod Calculator",
-      "nameZh": "Chmod 权限计算器",
-      "icon": "mdi:lock-check",
+      "id": "aes-ctr-encryption",
+      "name": "AES-CTR Encryption",
+      "nameZh": "AES-CTR 加密",
+      "icon": "mdi:counter",
       "category": [
-        "programming"
+        "cryptography"
       ],
       "keywords": [
-        "chmod",
-        "permission",
-        "linux",
-        "权限"
+        "aes",
+        "ctr",
+        "counter",
+        "stream",
+        "加密",
+        "计数器"
       ],
-      "description": "Linux 文件权限 chmod 计算器",
-      "path": "tools/ChmodCalculator.vue",
+      "description": "AES-256-CTR 计数器模式流加密",
+      "path": "tools/AesCtrEncryption.vue",
       "author": "k3vi-07",
-      "version": "v1.2.0"
+      "version": "v1.7.0"
     },
     {
-      "id": "countdown-timer",
-      "name": "Countdown Timer",
-      "nameZh": "倒计时器",
-      "icon": "mdi:timer",
+      "id": "aes-gcm-encryption",
+      "name": "AES-GCM Encryption",
+      "nameZh": "AES-GCM 认证加密",
+      "icon": "mdi:lock-alert",
       "category": [
-        "datetime"
+        "cryptography"
       ],
       "keywords": [
-        "countdown",
-        "timer",
-        "倒计时"
+        "aes",
+        "gcm",
+        "authenticated",
+        "encrypt",
+        "认证加密",
+        "AEAD"
       ],
-      "description": "实时倒计时到指定日期",
-      "path": "tools/CountdownTimer.vue",
+      "description": "AES-256-GCM 认证加密，提供加密+完整性验证",
+      "path": "tools/AesGcmEncryption.vue",
       "author": "k3vi-07",
-      "version": "v1.2.0"
+      "version": "v1.6.0"
     },
     {
-      "id": "stopwatch",
-      "name": "Stopwatch",
-      "nameZh": "秒表",
-      "icon": "mdi:timer-outline",
+      "id": "argon2-generator",
+      "name": "Argon2 Generator",
+      "nameZh": "Argon2 密钥派生",
+      "icon": "mdi:gas-cylinder",
       "category": [
-        "datetime"
+        "cryptography"
       ],
       "keywords": [
-        "stopwatch",
-        "timer",
-        "秒表"
+        "argon2",
+        "kdf",
+        "password",
+        "derive",
+        "密钥派生",
+        "密码哈希",
+        "竞赛"
       ],
-      "description": "高精度秒表，支持记圈",
-      "path": "tools/Stopwatch.vue",
+      "description": "Argon2 参数展示 + PBKDF2 密钥派生",
+      "path": "tools/Argon2Generator.vue",
       "author": "k3vi-07",
-      "version": "v1.2.0"
+      "version": "v1.7.0"
     },
     {
-      "id": "figlet-art",
-      "name": "ASCII Art",
-      "nameZh": "ASCII 艺术字",
-      "icon": "mdi:format-text",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "ascii",
-        "art",
-        "figlet",
-        "艺术字"
-      ],
-      "description": "将文本转换为 ASCII 艺术字",
-      "path": "tools/FigletArt.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "key-code-table",
-      "name": "Key Code Table",
-      "nameZh": "键盘 KeyCode 查询",
-      "icon": "mdi:keyboard",
-      "category": [
-        "programming"
-      ],
-      "keywords": [
-        "keycode",
-        "keyboard",
-        "key",
-        "键盘"
-      ],
-      "description": "实时查询键盘按键的 keyCode 值",
-      "path": "tools/KeyCodeTable.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "utm-generator",
-      "name": "UTM Generator",
-      "nameZh": "UTM 链接生成器",
-      "icon": "mdi:link-plus",
-      "category": [
-        "web"
-      ],
-      "keywords": [
-        "utm",
-        "url",
-        "marketing",
-        "tracking",
-        "营销"
-      ],
-      "description": "生成带 UTM 追踪参数的营销链接",
-      "path": "tools/UtmGenerator.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "qr-scanner",
-      "name": "QR Code Scanner",
-      "nameZh": "二维码识别",
-      "icon": "mdi:qrcode-scan",
+      "id": "atbash-cipher",
+      "name": "Atbash Cipher",
+      "nameZh": "Atbash 密码",
+      "icon": "mdi:swap-vertical",
       "category": [
         "encode"
       ],
       "keywords": [
-        "qr",
-        "qrcode",
-        "scan",
-        "识别",
-        "扫码"
+        "atbash",
+        "cipher",
+        "reverse",
+        "hebrew",
+        "密码",
+        "替换"
       ],
-      "description": "上传图片识别二维码内容",
-      "path": "tools/QrCodeScanner.vue",
+      "description": "Atbash 替换密码，字母表镜像反转",
+      "path": "tools/AtbashCipher.vue",
       "author": "k3vi-07",
       "version": "v1.2.0"
     },
     {
-      "id": "compound-interest",
-      "name": "Compound Interest",
-      "nameZh": "复利计算器",
-      "icon": "mdi:chart-line",
+      "id": "barcode-generator",
+      "name": "Barcode Generator",
+      "nameZh": "条形码生成器",
+      "icon": "mdi:barcode",
       "category": [
-        "web"
+        "encode"
       ],
       "keywords": [
-        "compound",
-        "interest",
-        "复利",
-        "投资",
-        "收益"
+        "barcode",
+        "generate",
+        "条形码",
+        "生成"
       ],
-      "description": "复利投资收益计算",
-      "path": "tools/CompoundInterest.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "ip-location",
-      "name": "IP Location",
-      "nameZh": "IP 定位",
-      "icon": "mdi:map-marker",
-      "category": [
-        "network"
-      ],
-      "keywords": [
-        "ip",
-        "location",
-        "geolocation",
-        "定位",
-        "地理"
-      ],
-      "description": "查询 IP 地址的地理位置信息",
-      "path": "tools/IpLocation.vue",
+      "description": "生成 CODE128/CODE39 条形码",
+      "path": "tools/BarcodeGenerator.vue",
       "author": "k3vi-07",
       "version": "v1.2.0"
     },
@@ -356,864 +149,6 @@
       "version": "v1.2.0"
     },
     {
-      "id": "symbol-picker",
-      "name": "Symbol Picker",
-      "nameZh": "特殊符号选择器",
-      "icon": "mdi:sigma",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "symbol",
-        "special",
-        "符号",
-        "特殊字符"
-      ],
-      "description": "数学、箭头、花色等特殊符号",
-      "path": "tools/SymbolPicker.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "character-counter",
-      "name": "Character Counter",
-      "nameZh": "字符计数器",
-      "icon": "mdi:counter",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "count",
-        "character",
-        "字数",
-        "字符",
-        "计数"
-      ],
-      "description": "实时统计字符/单词/行数/中文字数",
-      "path": "tools/CharacterCounter.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "color-contrast",
-      "name": "Color Contrast",
-      "nameZh": "颜色对比度检查",
-      "icon": "mdi:contrast",
-      "category": [
-        "color"
-      ],
-      "keywords": [
-        "color",
-        "contrast",
-        "wcag",
-        "accessibility",
-        "对比度",
-        "无障碍"
-      ],
-      "description": "WCAG 颜色对比度合规检查",
-      "path": "tools/ColorContrast.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "css-grid-generator",
-      "name": "CSS Grid Generator",
-      "nameZh": "Grid 布局生成器",
-      "icon": "mdi:view-grid",
-      "category": [
-        "web"
-      ],
-      "keywords": [
-        "css",
-        "grid",
-        "layout",
-        "布局",
-        "生成"
-      ],
-      "description": "可视化生成 CSS Grid 布局",
-      "path": "tools/CssGridGenerator.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "jwt-generator",
-      "name": "JWT Generator",
-      "nameZh": "JWT 生成器",
-      "icon": "mdi:key-plus",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "jwt",
-        "token",
-        "generate",
-        "生成",
-        "令牌"
-      ],
-      "description": "使用密钥生成 JWT Token",
-      "path": "tools/JwtGenerator.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "random-string",
-      "name": "Random String",
-      "nameZh": "随机字符串生成",
-      "icon": "mdi:shuffle-variant",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "random",
-        "string",
-        "token",
-        "随机",
-        "字符串"
-      ],
-      "description": "生成安全的随机字符串",
-      "path": "tools/RandomString.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "html-symbols",
-      "name": "HTML Symbols",
-      "nameZh": "HTML 符号速查",
-      "icon": "mdi:code-not-equal-variant",
-      "category": [
-        "web"
-      ],
-      "keywords": [
-        "html",
-        "symbol",
-        "entity",
-        "符号",
-        "实体"
-      ],
-      "description": "HTML 特殊符号实体编码速查表",
-      "path": "tools/HtmlSymbols.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "text-flip",
-      "name": "Text Flip",
-      "nameZh": "趣味文字翻转",
-      "icon": "mdi:flip-vertical",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "flip",
-        "upside",
-        "mirror",
-        "fancy",
-        "翻转",
-        "镜像",
-        "花体"
-      ],
-      "description": "上下翻转/镜像/气泡字/全角等趣味文字",
-      "path": "tools/TextFlip.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "exchange-rate",
-      "name": "Exchange Rate",
-      "nameZh": "汇率换算",
-      "icon": "mdi:currency-usd",
-      "category": [
-        "web"
-      ],
-      "keywords": [
-        "exchange",
-        "rate",
-        "currency",
-        "汇率",
-        "货币"
-      ],
-      "description": "实时汇率换算（10种货币）",
-      "path": "tools/ExchangeRate.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "ping-test",
-      "name": "Ping Test",
-      "nameZh": "Ping 延迟测试",
-      "icon": "mdi:speedometer",
-      "category": [
-        "network"
-      ],
-      "keywords": [
-        "ping",
-        "latency",
-        "network",
-        "延迟",
-        "网络"
-      ],
-      "description": "测试网站延迟（近似 ping）",
-      "path": "tools/PingTest.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "json-diff",
-      "name": "JSON Diff",
-      "nameZh": "JSON 对比",
-      "icon": "mdi:file-compare",
-      "category": [
-        "json"
-      ],
-      "keywords": [
-        "json",
-        "diff",
-        "compare",
-        "对比",
-        "差异"
-      ],
-      "description": "深度对比两个 JSON 的差异",
-      "path": "tools/JsonDiff.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "barcode-generator",
-      "name": "Barcode Generator",
-      "nameZh": "条形码生成器",
-      "icon": "mdi:barcode",
-      "category": [
-        "encode"
-      ],
-      "keywords": [
-        "barcode",
-        "generate",
-        "条形码",
-        "生成"
-      ],
-      "description": "生成 CODE128/CODE39 条形码",
-      "path": "tools/BarcodeGenerator.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "float-converter",
-      "name": "Float Converter",
-      "nameZh": "浮点数转换",
-      "icon": "mdi:decimal",
-      "category": [
-        "programming"
-      ],
-      "keywords": [
-        "float",
-        "ieee754",
-        "hex",
-        "binary",
-        "浮点数"
-      ],
-      "description": "IEEE 754 浮点数与十六进制互转",
-      "path": "tools/FloatConverter.vue",
-      "author": "k3vi-07",
-      "version": "v1.2.0"
-    },
-    {
-      "id": "cron-generator",
-      "name": "Cron Generator",
-      "nameZh": "Cron 表达式生成器",
-      "icon": "mdi:clock-time-four-outline",
-      "category": [
-        "programming"
-      ],
-      "keywords": [
-        "cron",
-        "schedule",
-        "crontab",
-        "定时",
-        "表达式"
-      ],
-      "description": "交互式生成 Cron 定时表达式",
-      "path": "tools/CronGenerator.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "http-status-code",
-      "name": "HTTP Status Code",
-      "nameZh": "HTTP 状态码速查",
-      "icon": "mdi:web",
-      "category": [
-        "web"
-      ],
-      "keywords": [
-        "http",
-        "status",
-        "code",
-        "响应码",
-        "状态码"
-      ],
-      "description": "HTTP 状态码分类速查表",
-      "path": "tools/HttpStatusCode.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "regex-cheat-sheet",
-      "name": "Regex Cheat Sheet",
-      "nameZh": "正则表达式速查",
-      "icon": "mdi:regex",
-      "category": [
-        "programming"
-      ],
-      "keywords": [
-        "regex",
-        "regular",
-        "expression",
-        "正则",
-        "速查"
-      ],
-      "description": "正则表达式语法速查表",
-      "path": "tools/RegexCheatSheet.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "mime-types",
-      "name": "MIME Types",
-      "nameZh": "MIME 类型查询",
-      "icon": "mdi:file-find-outline",
-      "category": [
-        "web"
-      ],
-      "keywords": [
-        "mime",
-        "type",
-        "content-type",
-        "文件类型"
-      ],
-      "description": "文件扩展名与 MIME 类型互查",
-      "path": "tools/MimeTypes.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "text-dedup",
-      "name": "Text Dedup",
-      "nameZh": "文本行去重",
-      "icon": "mdi:format-list-bulleted",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "dedup",
-        "unique",
-        "去重",
-        "重复"
-      ],
-      "description": "文本行去重，保留首次出现顺序",
-      "path": "tools/TextDedup.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "text-sort",
-      "name": "Text Sort",
-      "nameZh": "文本排序",
-      "icon": "mdi:sort-alphabetical-ascending",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "sort",
-        "order",
-        "排序",
-        "排列"
-      ],
-      "description": "文本行排序（升序/降序/自然/随机）",
-      "path": "tools/TextSort.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "markdown-to-html",
-      "name": "Markdown to HTML",
-      "nameZh": "Markdown 转 HTML",
-      "icon": "mdi:language-markdown",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "markdown",
-        "html",
-        "md",
-        "转换"
-      ],
-      "description": "Markdown 转换为 HTML 代码",
-      "path": "tools/MarkdownToHtml.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "html-to-markdown",
-      "name": "HTML to Markdown",
-      "nameZh": "HTML 转 Markdown",
-      "icon": "mdi:language-html5",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "html",
-        "markdown",
-        "md",
-        "转换"
-      ],
-      "description": "HTML 转换为 Markdown 格式",
-      "path": "tools/HtmlToMarkdown.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "password-strength",
-      "name": "Password Strength",
-      "nameZh": "密码强度检测",
-      "icon": "mdi:shield-check-outline",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "password",
-        "strength",
-        "密码",
-        "强度",
-        "安全"
-      ],
-      "description": "检测密码强度、熵值和破解时间",
-      "path": "tools/PasswordStrength.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "csp-generator",
-      "name": "CSP Generator",
-      "nameZh": "CSP 生成器",
-      "icon": "mdi:shield-lock-outline",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "csp",
-        "content-security-policy",
-        "安全",
-        "header"
-      ],
-      "description": "Content-Security-Policy 头生成器",
-      "path": "tools/CspGenerator.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "sql-injection-checker",
-      "name": "SQL Injection Checker",
-      "nameZh": "SQL 注入检测",
-      "icon": "mdi:database-alert-outline",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "sql",
-        "injection",
-        "sqli",
-        "注入",
-        "安全"
-      ],
-      "description": "SQL 注入风险模式检测",
-      "path": "tools/SqlInjectionChecker.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "regex-tester",
-      "name": "Regex Tester",
-      "nameZh": "正则表达式测试",
-      "icon": "mdi:regex",
-      "category": [
-        "programming"
-      ],
-      "keywords": [
-        "regex",
-        "test",
-        "正则",
-        "测试",
-        "匹配"
-      ],
-      "description": "实时测试正则表达式匹配结果",
-      "path": "tools/RegexTester.vue",
-      "author": "k3vi-07",
-      "version": "v1.3.0"
-    },
-    {
-      "id": "des-encryption",
-      "name": "DES Encryption",
-      "nameZh": "DES/3DES 加解密",
-      "icon": "mdi:lock-outline",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "des",
-        "3des",
-        "triple",
-        "encryption",
-        "加密",
-        "对称"
-      ],
-      "description": "DES/3DES 对称加密解密（ECB/CBC 模式）",
-      "path": "tools/DesEncryption.vue",
-      "author": "k3vi-07",
-      "version": "v1.4.0"
-    },
-    {
-      "id": "pbkdf2-generator",
-      "name": "PBKDF2 Generator",
-      "nameZh": "PBKDF2 密钥派生",
-      "icon": "mdi:key-chain-variant",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "pbkdf2",
-        "key",
-        "derivation",
-        "derive",
-        "密钥"
-      ],
-      "description": "PBKDF2 密钥派生函数（迭代/盐/长度可调）",
-      "path": "tools/Pbkdf2Generator.vue",
-      "author": "k3vi-07",
-      "version": "v1.4.0"
-    },
-    {
-      "id": "hmac-generator-pro",
-      "name": "HMAC Generator Pro",
-      "nameZh": "HMAC 全系列生成",
-      "icon": "mdi:shield-key",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "hmac",
-        "sha",
-        "sign",
-        "签名",
-        "认证"
-      ],
-      "description": "HMAC 全系列（SHA-1/256/384/512）实时计算",
-      "path": "tools/HmacGeneratorPro.vue",
-      "author": "k3vi-07",
-      "version": "v1.4.0"
-    },
-    {
-      "id": "sm3-hash",
-      "name": "SM3 Hash",
-      "nameZh": "SM3 国密哈希",
-      "icon": "mdi:cube-outline",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "sm3",
-        "chinese",
-        "national",
-        "国密",
-        "哈希",
-        "gm"
-      ],
-      "description": "SM3 中国国密密码杂凑算法（GM/T 0004）",
-      "path": "tools/Sm3Hash.vue",
-      "author": "k3vi-07",
-      "version": "v1.4.0"
-    },
-    {
-      "id": "blake2-hash",
-      "name": "BLAKE2 Hash",
-      "nameZh": "BLAKE2 哈希",
-      "icon": "mdi:fingerprint",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "blake2",
-        "blake2s",
-        "hash",
-        "哈希",
-        "快速"
-      ],
-      "description": "BLAKE2s 快速加密哈希（256/224/160 位）",
-      "path": "tools/Blake2Hash.vue",
-      "author": "k3vi-07",
-      "version": "v1.4.0"
-    },
-    {
-      "id": "chacha20-encryption",
-      "name": "ChaCha20 Encryption",
-      "nameZh": "ChaCha20 加密",
-      "icon": "mdi:lock-clock",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "chacha20",
-        "salsa",
-        "stream",
-        "cipher",
-        "流密码",
-        "加密"
-      ],
-      "description": "ChaCha20 流密码加密解密",
-      "path": "tools/Chacha20Encryption.vue",
-      "author": "k3vi-07",
-      "version": "v1.4.0"
-    },
-    {
-      "id": "scrypt-generator",
-      "name": "scrypt Generator",
-      "nameZh": "scrypt 密钥派生",
-      "icon": "mdi:memory",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "scrypt",
-        "kdf",
-        "key",
-        "derivation",
-        "asic",
-        "resistant"
-      ],
-      "description": "scrypt 内存困难型密钥派生（N/r/p 参数可调）",
-      "path": "tools/ScryptGenerator.vue",
-      "author": "k3vi-07",
-      "version": "v1.4.0"
-    },
-    {
-      "id": "hash-file",
-      "name": "File Hash",
-      "nameZh": "文件哈希计算",
-      "icon": "mdi:file-check-outline",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "file",
-        "hash",
-        "sha",
-        "md5",
-        "checksum",
-        "文件",
-        "校验"
-      ],
-      "description": "计算文件的多种哈希值（SHA-1/256/384/512 + MD5）",
-      "path": "tools/HashFile.vue",
-      "author": "k3vi-07",
-      "version": "v1.4.0"
-    },
-    {
-      "id": "json-schema-generator",
-      "name": "JSON Schema Generator",
-      "nameZh": "JSON Schema 生成器",
-      "icon": "mdi:code-braces",
-      "category": [
-        "json"
-      ],
-      "keywords": [
-        "json",
-        "schema",
-        "generator",
-        "生成",
-        "类型"
-      ],
-      "description": "从 JSON 数据自动推断生成 JSON Schema",
-      "path": "tools/JsonSchemaGenerator.vue",
-      "author": "k3vi-07",
-      "version": "v1.5.0"
-    },
-    {
-      "id": "http-tester",
-      "name": "HTTP Tester",
-      "nameZh": "HTTP 请求测试器",
-      "icon": "mdi:send",
-      "category": [
-        "network"
-      ],
-      "keywords": [
-        "http",
-        "request",
-        "api",
-        "test",
-        "请求",
-        "测试",
-        "fetch"
-      ],
-      "description": "发送 HTTP 请求，查看响应状态、耗时和内容",
-      "path": "tools/HttpTester.vue",
-      "author": "k3vi-07",
-      "version": "v1.5.0"
-    },
-    {
-      "id": "css-unit-converter",
-      "name": "CSS Unit Converter",
-      "nameZh": "CSS 单位转换器",
-      "icon": "mdi:ruler",
-      "category": [
-        "web"
-      ],
-      "keywords": [
-        "css",
-        "unit",
-        "px",
-        "rem",
-        "em",
-        "vw",
-        "vh",
-        "单位",
-        "转换"
-      ],
-      "description": "在 px/rem/em/pt/vw/vh 之间相互转换",
-      "path": "tools/CssUnitConverter.vue",
-      "author": "k3vi-07",
-      "version": "v1.5.0"
-    },
-    {
-      "id": "uuid-comparer",
-      "name": "UUID Generator Pro",
-      "nameZh": "UUID 多版本生成",
-      "icon": "mdi:identifier",
-      "category": [
-        "programming"
-      ],
-      "keywords": [
-        "uuid",
-        "guid",
-        "v4",
-        "nil",
-        "生成",
-        "唯一"
-      ],
-      "description": "生成 UUID v4 / nil，支持大写、花括号、去横线格式",
-      "path": "tools/UuidComparer.vue",
-      "author": "k3vi-07",
-      "version": "v1.5.0"
-    },
-    {
-      "id": "line-reverser",
-      "name": "Line Reverser",
-      "nameZh": "多行文本反转",
-      "icon": "mdi:format-align-justify",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "reverse",
-        "line",
-        "text",
-        "反转",
-        "倒序",
-        "行"
-      ],
-      "description": "按行反转、每行字符反转、单词反转等多种模式",
-      "path": "tools/LineReverser.vue",
-      "author": "k3vi-07",
-      "version": "v1.5.0"
-    },
-    {
-      "id": "text-case-batch",
-      "name": "Text Case Batch",
-      "nameZh": "批量大小写转换",
-      "icon": "mdi:format-text",
-      "category": [
-        "text"
-      ],
-      "keywords": [
-        "case",
-        "upper",
-        "lower",
-        "camel",
-        "snake",
-        "kebab",
-        "大小写",
-        "转换"
-      ],
-      "description": "12 种命名风格一键转换：驼峰、下划线、短横线等",
-      "path": "tools/TextCaseBatch.vue",
-      "author": "k3vi-07",
-      "version": "v1.5.0"
-    },
-    {
-      "id": "text-encryptor",
-      "name": "Text Encryptor",
-      "nameZh": "文本加密器",
-      "icon": "mdi:lock-outline",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "encrypt",
-        "decrypt",
-        "xor",
-        "base64",
-        "加密",
-        "解密"
-      ],
-      "description": "XOR 加密 + Base64 编码，无需外部依赖",
-      "path": "tools/TextEncryptor.vue",
-      "author": "k3vi-07",
-      "version": "v1.5.0"
-    },
-    {
-      "id": "string-escape-pro",
-      "name": "String Escape Pro",
-      "nameZh": "文本转义工具",
-      "icon": "mdi:format-quote-close",
-      "category": [
-        "encode"
-      ],
-      "keywords": [
-        "escape",
-        "unicode",
-        "html",
-        "url",
-        "hex",
-        "js",
-        "转义",
-        "编码"
-      ],
-      "description": "HTML 实体/URL/Unicode/Hex/JS 字符串转义",
-      "path": "tools/StringEscapePro.vue",
-      "author": "k3vi-07",
-      "version": "v1.5.0"
-    },
-    {
-      "id": "xss-sanitizer",
-      "name": "XSS Sanitizer",
-      "nameZh": "XSS 净化器",
-      "icon": "mdi:shield-alert",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "xss",
-        "security",
-        "sanitize",
-        "html",
-        "安全",
-        "净化",
-        "过滤"
-      ],
-      "description": "检测和净化 XSS 攻击代码，移除危险标签和事件",
-      "path": "tools/XssSanitizer.vue",
-      "author": "k3vi-07",
-      "version": "v1.5.0"
-    },
-    {
       "id": "base64-image",
       "name": "Base64 Image",
       "nameZh": "Base64 图片互转",
@@ -1236,261 +171,129 @@
       "version": "v1.5.0"
     },
     {
-      "id": "color-extractor",
-      "name": "Color Extractor",
-      "nameZh": "颜色提取器",
-      "icon": "mdi:eyedropper",
+      "id": "base85-encode",
+      "name": "Base85 Encode",
+      "nameZh": "Base85 编码",
+      "icon": "mdi:binary",
       "category": [
-        "color"
+        "encode"
       ],
       "keywords": [
-        "color",
-        "css",
-        "hex",
-        "rgb",
-        "extract",
-        "颜色",
-        "提取"
+        "base85",
+        "ascii85",
+        "encode",
+        "decode",
+        "编码"
       ],
-      "description": "从 CSS/HTML 代码中提取所有颜色值",
-      "path": "tools/ColorExtractor.vue",
+      "description": "Base85 (Ascii85) 编码解码，比 Base64 更紧凑",
+      "path": "tools/Base85Encode.vue",
       "author": "k3vi-07",
-      "version": "v1.5.0"
+      "version": "v1.2.0"
     },
     {
-      "id": "cron-generator-pro",
-      "name": "Cron Generator Pro",
-      "nameZh": "Cron 表达式生成器",
-      "icon": "mdi:clock-time-eight",
+      "id": "base91-encode",
+      "name": "Base91 Encode",
+      "nameZh": "Base91 编码",
+      "icon": "mdi:binary",
       "category": [
-        "datetime"
+        "encode"
       ],
       "keywords": [
-        "cron",
-        "schedule",
-        "timer",
-        "crontab",
-        "定时",
-        "表达式"
+        "base91",
+        "basE91",
+        "encode",
+        "decode",
+        "编码"
       ],
-      "description": "可视化生成 Cron 表达式，预设常用模式",
-      "path": "tools/CronGeneratorPro.vue",
+      "description": "Base91 编码解码，最高效的可打印 ASCII 编码",
+      "path": "tools/Base91Encode.vue",
       "author": "k3vi-07",
-      "version": "v1.5.0"
+      "version": "v1.2.0"
     },
     {
-      "id": "rc4-encryption",
-      "name": "RC4 Encryption",
-      "nameZh": "RC4 流密码",
-      "icon": "mdi:lock-outline",
+      "id": "baudot-code",
+      "name": "Baudot Code",
+      "nameZh": "Baudot 博多码",
+      "icon": "mdi:morse",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "baudot",
+        "ita2",
+        "telegraph",
+        "telex",
+        "电报",
+        "博多"
+      ],
+      "description": "Baudot / ITA2 五位电报码编解码",
+      "path": "tools/BaudotCode.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "bcrypt-checker",
+      "name": "BCrypt Checker",
+      "nameZh": "BCrypt 验证器",
+      "icon": "mdi:lock-check",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "rc4",
-        "stream",
-        "cipher",
-        "encrypt",
-        "流密码",
-        "加密"
-      ],
-      "description": "RC4 流密码加解密，输出 Hex 格式",
-      "path": "tools/Rc4Encryption.vue",
-      "author": "k3vi-07",
-      "version": "v1.6.0"
-    },
-    {
-      "id": "aes-gcm-encryption",
-      "name": "AES-GCM Encryption",
-      "nameZh": "AES-GCM 认证加密",
-      "icon": "mdi:lock-alert",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "aes",
-        "gcm",
-        "authenticated",
-        "encrypt",
-        "认证加密",
-        "AEAD"
-      ],
-      "description": "AES-256-GCM 认证加密，提供加密+完整性验证",
-      "path": "tools/AesGcmEncryption.vue",
-      "author": "k3vi-07",
-      "version": "v1.6.0"
-    },
-    {
-      "id": "xtea-encryption",
-      "name": "XTEA/XXTEA Encryption",
-      "nameZh": "XTEA/XXTEA 加密",
-      "icon": "mdi:lock-pattern",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "xtea",
-        "xxtea",
-        "block",
-        "cipher",
-        "分组",
-        "加密",
-        "tea"
-      ],
-      "description": "XTEA 和 XXTEA 分组密码加解密",
-      "path": "tools/XteaEncryption.vue",
-      "author": "k3vi-07",
-      "version": "v1.6.0"
-    },
-    {
-      "id": "sm4-encryption",
-      "name": "SM4 Encryption",
-      "nameZh": "SM4 国密加密",
-      "icon": "mdi:shield-account",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "sm4",
-        "国密",
-        "block",
-        "cipher",
-        "分组密码",
-        "guomi",
-        "中国"
-      ],
-      "description": "SM4 国密分组密码算法（ECB 模式）",
-      "path": "tools/Sm4Encryption.vue",
-      "author": "k3vi-07",
-      "version": "v1.6.0"
-    },
-    {
-      "id": "camellia-encryption",
-      "name": "Camellia Encryption",
-      "nameZh": "Camellia 加密",
-      "icon": "mdi:flower-tulip",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "camellia",
-        "block",
-        "cipher",
-        "国际标准",
-        "分组密码"
-      ],
-      "description": "Camellia 国际标准分组密码",
-      "path": "tools/CamelliaEncryption.vue",
-      "author": "k3vi-07",
-      "version": "v1.6.0"
-    },
-    {
-      "id": "ecdsa-signer",
-      "name": "ECDSA Signer",
-      "nameZh": "ECDSA 数字签名",
-      "icon": "mdi:draw-pen",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "ecdsa",
-        "signature",
-        "sign",
+        "bcrypt",
+        "password",
         "verify",
-        "椭圆曲线",
-        "签名",
-        "验签",
-        "p256"
+        "salt",
+        "cost",
+        "密码",
+        "验证",
+        "哈希"
       ],
-      "description": "ECDSA 数字签名：生成密钥对、签名、验签",
-      "path": "tools/EcdsaSigner.vue",
+      "description": "解析并验证 BCrypt 密码哈希 ($2a$10$...)",
+      "path": "tools/BcryptChecker.vue",
       "author": "k3vi-07",
-      "version": "v1.6.0"
+      "version": "v1.7.0"
     },
     {
-      "id": "ecdh-key-exchange",
-      "name": "ECDH Key Exchange",
-      "nameZh": "ECDH 密钥交换",
-      "icon": "mdi:swap-horizontal-bold",
+      "id": "bifid-cipher",
+      "name": "Bifid Cipher",
+      "nameZh": "Bifid 密码",
+      "icon": "mdi:grid",
       "category": [
-        "cryptography"
+        "encode"
       ],
       "keywords": [
-        "ecdh",
-        "key",
-        "exchange",
-        "diffie",
-        "hellman",
-        "密钥交换",
-        "椭圆曲线"
+        "bifid",
+        "fractional",
+        "cipher",
+        "polybius",
+        "密码",
+        "分数"
       ],
-      "description": "ECDH 椭圆曲线密钥交换演示，双方推导共享密钥",
-      "path": "tools/EcdhKeyExchange.vue",
+      "description": "Bifid 分数密码编解码，支持密钥",
+      "path": "tools/BifidCipher.vue",
       "author": "k3vi-07",
-      "version": "v1.6.0"
+      "version": "v1.2.0"
     },
     {
-      "id": "fnv-hash",
-      "name": "FNV Hash",
-      "nameZh": "FNV 哈希",
+      "id": "blake2-hash",
+      "name": "BLAKE2 Hash",
+      "nameZh": "BLAKE2 哈希",
       "icon": "mdi:fingerprint",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "fnv",
+        "blake2",
+        "blake2s",
         "hash",
-        "32",
-        "64",
-        "fast",
-        "非加密哈希"
+        "哈希",
+        "快速"
       ],
-      "description": "FNV-1 / FNV-1a 哈希（32位/64位）",
-      "path": "tools/FnvHash.vue",
+      "description": "BLAKE2s 快速加密哈希（256/224/160 位）",
+      "path": "tools/Blake2Hash.vue",
       "author": "k3vi-07",
-      "version": "v1.6.0"
-    },
-    {
-      "id": "murmur-hash",
-      "name": "MurmurHash",
-      "nameZh": "Murmur 哈希",
-      "icon": "mdi:blur",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "murmur",
-        "hash",
-        "32",
-        "non-cryptographic",
-        "fast",
-        "快速哈希"
-      ],
-      "description": "MurmurHash2 / MurmurHash3 非加密哈希",
-      "path": "tools/MurmurHash.vue",
-      "author": "k3vi-07",
-      "version": "v1.6.0"
-    },
-    {
-      "id": "sip-hash",
-      "name": "SipHash",
-      "nameZh": "SipHash 哈希",
-      "icon": "mdi:cup-water",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "siphash",
-        "hash",
-        "prf",
-        "hashtable",
-        "anti-collision",
-        "防碰撞"
-      ],
-      "description": "SipHash-2-4 / SipHash-1-3 短输入 PRF 哈希",
-      "path": "tools/SipHash.vue",
-      "author": "k3vi-07",
-      "version": "v1.6.0"
+      "version": "v1.4.0"
     },
     {
       "id": "blowfish-encryption",
@@ -1515,127 +318,144 @@
       "version": "v1.7.0"
     },
     {
-      "id": "salsa20-encryption",
-      "name": "Salsa20 Encryption",
-      "nameZh": "Salsa20 流密码",
-      "icon": "mdi:waves",
+      "id": "braille-encoder",
+      "name": "Braille Encoder",
+      "nameZh": "盲文编解码",
+      "icon": "mdi:braille",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "braille",
+        "盲文",
+        "点字",
+        "visually",
+        "impaired"
+      ],
+      "description": "文本与 Unicode 盲文互转",
+      "path": "tools/BrailleEncoder.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "camellia-encryption",
+      "name": "Camellia Encryption",
+      "nameZh": "Camellia 加密",
+      "icon": "mdi:flower-tulip",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "salsa20",
+        "camellia",
+        "block",
+        "cipher",
+        "国际标准",
+        "分组密码"
+      ],
+      "description": "Camellia 国际标准分组密码",
+      "path": "tools/CamelliaEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.6.0"
+    },
+    {
+      "id": "chacha20-encryption",
+      "name": "ChaCha20 Encryption",
+      "nameZh": "ChaCha20 加密",
+      "icon": "mdi:lock-clock",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "chacha20",
+        "salsa",
         "stream",
         "cipher",
         "流密码",
-        "djb",
         "加密"
       ],
-      "description": "Salsa20 流密码，256 位密钥",
-      "path": "tools/Salsa20Encryption.vue",
+      "description": "ChaCha20 流密码加密解密",
+      "path": "tools/Chacha20Encryption.vue",
       "author": "k3vi-07",
-      "version": "v1.7.0"
+      "version": "v1.4.0"
     },
     {
-      "id": "rabbit-cipher",
-      "name": "Rabbit Cipher",
-      "nameZh": "Rabbit 流密码",
-      "icon": "mdi:rabbit",
+      "id": "character-counter",
+      "name": "Character Counter",
+      "nameZh": "字符计数器",
+      "icon": "mdi:counter",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "count",
+        "character",
+        "字数",
+        "字符",
+        "计数"
+      ],
+      "description": "实时统计字符/单词/行数/中文字数",
+      "path": "tools/CharacterCounter.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "chinese-to-pinyin",
+      "name": "Chinese to Pinyin",
+      "nameZh": "中文转拼音",
+      "icon": "mdi:translate",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "pinyin",
+        "chinese",
+        "拼音",
+        "中文"
+      ],
+      "description": "将中文汉字转换为拼音首字母",
+      "path": "tools/ChineseToPinyin.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "chmod-calculator",
+      "name": "Chmod Calculator",
+      "nameZh": "Chmod 权限计算器",
+      "icon": "mdi:lock-check",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "chmod",
+        "permission",
+        "linux",
+        "权限"
+      ],
+      "description": "Linux 文件权限 chmod 计算器",
+      "path": "tools/ChmodCalculator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "city-hash",
+      "name": "CityHash",
+      "nameZh": "CityHash 哈希",
+      "icon": "mdi:city",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "rabbit",
-        "stream",
-        "cipher",
-        "流密码",
-        "rfc6631",
-        "加密"
-      ],
-      "description": "Rabbit 高速流密码 (RFC 6631)",
-      "path": "tools/RabbitCipher.vue",
-      "author": "k3vi-07",
-      "version": "v1.7.0"
-    },
-    {
-      "id": "whirlpool-hash",
-      "name": "Whirlpool Hash",
-      "nameZh": "Whirlpool 哈希",
-      "icon": "mdi:weather-hurricane",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "whirlpool",
+        "cityhash",
+        "google",
         "hash",
-        "512",
-        "iso",
-        "哈希"
+        "64",
+        "128",
+        "seed",
+        "非加密",
+        "哈希表"
       ],
-      "description": "Whirlpool 512 位哈希 (ISO/IEC 10118-3)",
-      "path": "tools/WhirlpoolHash.vue",
-      "author": "k3vi-07",
-      "version": "v1.7.0"
-    },
-    {
-      "id": "gost-hash",
-      "name": "GOST Hash",
-      "nameZh": "GOST 哈希",
-      "icon": "mdi:flag-variant",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "gost",
-        "russian",
-        "hash",
-        "256",
-        "俄罗斯",
-        "哈希",
-        "国标"
-      ],
-      "description": "GOST R 34.11-94 俄罗斯国家标准哈希",
-      "path": "tools/GostHash.vue",
-      "author": "k3vi-07",
-      "version": "v1.7.0"
-    },
-    {
-      "id": "tiger-hash",
-      "name": "Tiger Hash",
-      "nameZh": "Tiger 哈希",
-      "icon": "mdi:paw",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "tiger",
-        "hash",
-        "192",
-        "fast",
-        "64-bit",
-        "哈希"
-      ],
-      "description": "Tiger 192 位哈希，64 位平台优化",
-      "path": "tools/TigerHash.vue",
-      "author": "k3vi-07",
-      "version": "v1.7.0"
-    },
-    {
-      "id": "snefru-hash",
-      "name": "Snefru Hash",
-      "nameZh": "Snefru 哈希",
-      "icon": "mdi:triangle",
-      "category": [
-        "cryptography"
-      ],
-      "keywords": [
-        "snefru",
-        "hash",
-        "256",
-        "merkle",
-        "哈希"
-      ],
-      "description": "Snefru 256 位哈希 (Ralph Merkle 设计)",
-      "path": "tools/SnefruHash.vue",
+      "description": "Google CityHash 非加密哈希 (64 位 / 128 位，支持 seed)",
+      "path": "tools/CityHash.vue",
       "author": "k3vi-07",
       "version": "v1.7.0"
     },
@@ -1666,91 +486,274 @@
       "version": "v1.7.0"
     },
     {
-      "id": "playfair-cipher",
-      "name": "Playfair Cipher",
-      "nameZh": "Playfair 密码",
-      "icon": "mdi:grid",
+      "id": "color-contrast",
+      "name": "Color Contrast",
+      "nameZh": "颜色对比度检查",
+      "icon": "mdi:contrast",
       "category": [
-        "cryptography"
+        "color"
       ],
       "keywords": [
-        "playfair",
-        "digraph",
-        "substitution",
-        "5x5",
-        "替换",
-        "古典",
-        "密码"
+        "color",
+        "contrast",
+        "wcag",
+        "accessibility",
+        "对比度",
+        "无障碍"
       ],
-      "description": "Playfair 双字母替换密码，5×5 矩阵",
-      "path": "tools/PlayfairCipher.vue",
+      "description": "WCAG 颜色对比度合规检查",
+      "path": "tools/ColorContrast.vue",
       "author": "k3vi-07",
-      "version": "v1.7.0"
+      "version": "v1.2.0"
     },
     {
-      "id": "argon2-generator",
-      "name": "Argon2 Generator",
-      "nameZh": "Argon2 密钥派生",
-      "icon": "mdi:gas-cylinder",
+      "id": "color-extractor",
+      "name": "Color Extractor",
+      "nameZh": "颜色提取器",
+      "icon": "mdi:eyedropper",
       "category": [
-        "cryptography"
+        "color"
       ],
       "keywords": [
-        "argon2",
-        "kdf",
-        "password",
-        "derive",
-        "密钥派生",
-        "密码哈希",
-        "竞赛"
-      ],
-      "description": "Argon2 参数展示 + PBKDF2 密钥派生",
-      "path": "tools/Argon2Generator.vue",
-      "author": "k3vi-07",
-      "version": "v1.7.0"
-    },
-    {
-      "id": "hex-base64-convert",
-      "name": "Hex Base64 Converter",
-      "nameZh": "Hex/Base64 互转",
-      "icon": "mdi:swap-vertical",
-      "category": [
-        "encode"
-      ],
-      "keywords": [
+        "color",
+        "css",
         "hex",
-        "base64",
-        "convert",
-        "互转",
-        "编码"
+        "rgb",
+        "extract",
+        "颜色",
+        "提取"
       ],
-      "description": "Hex 与 Base64 双向转换",
-      "path": "tools/HexBase64Convert.vue",
+      "description": "从 CSS/HTML 代码中提取所有颜色值",
+      "path": "tools/ColorExtractor.vue",
       "author": "k3vi-07",
-      "version": "v1.7.0"
+      "version": "v1.5.0"
     },
     {
-      "id": "pem-formatter",
-      "name": "PEM Formatter",
-      "nameZh": "PEM 格式化",
-      "icon": "mdi:file-certificate",
+      "id": "compound-interest",
+      "name": "Compound Interest",
+      "nameZh": "复利计算器",
+      "icon": "mdi:chart-line",
       "category": [
-        "encode"
+        "web"
       ],
       "keywords": [
-        "pem",
-        "rsa",
-        "certificate",
-        "key",
-        "format",
-        "证书",
-        "格式化",
-        "base64"
+        "compound",
+        "interest",
+        "复利",
+        "投资",
+        "收益"
       ],
-      "description": "PEM 证书格式化、去换行、提取 Base64",
-      "path": "tools/PemFormatter.vue",
+      "description": "复利投资收益计算",
+      "path": "tools/CompoundInterest.vue",
       "author": "k3vi-07",
-      "version": "v1.7.0"
+      "version": "v1.2.0"
+    },
+    {
+      "id": "countdown-timer",
+      "name": "Countdown Timer",
+      "nameZh": "倒计时器",
+      "icon": "mdi:timer",
+      "category": [
+        "datetime"
+      ],
+      "keywords": [
+        "countdown",
+        "timer",
+        "倒计时"
+      ],
+      "description": "实时倒计时到指定日期",
+      "path": "tools/CountdownTimer.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "cron-generator",
+      "name": "Cron Generator",
+      "nameZh": "Cron 表达式生成器",
+      "icon": "mdi:clock-time-four-outline",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "cron",
+        "schedule",
+        "crontab",
+        "定时",
+        "表达式"
+      ],
+      "description": "交互式生成 Cron 定时表达式",
+      "path": "tools/CronGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "cron-generator-pro",
+      "name": "Cron Generator Pro",
+      "nameZh": "Cron 表达式生成器",
+      "icon": "mdi:clock-time-eight",
+      "category": [
+        "datetime"
+      ],
+      "keywords": [
+        "cron",
+        "schedule",
+        "timer",
+        "crontab",
+        "定时",
+        "表达式"
+      ],
+      "description": "可视化生成 Cron 表达式，预设常用模式",
+      "path": "tools/CronGeneratorPro.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "csp-generator",
+      "name": "CSP Generator",
+      "nameZh": "CSP 生成器",
+      "icon": "mdi:shield-lock-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "csp",
+        "content-security-policy",
+        "安全",
+        "header"
+      ],
+      "description": "Content-Security-Policy 头生成器",
+      "path": "tools/CspGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "css-grid-generator",
+      "name": "CSS Grid Generator",
+      "nameZh": "Grid 布局生成器",
+      "icon": "mdi:view-grid",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "css",
+        "grid",
+        "layout",
+        "布局",
+        "生成"
+      ],
+      "description": "可视化生成 CSS Grid 布局",
+      "path": "tools/CssGridGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "css-unit-converter",
+      "name": "CSS Unit Converter",
+      "nameZh": "CSS 单位转换器",
+      "icon": "mdi:ruler",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "css",
+        "unit",
+        "px",
+        "rem",
+        "em",
+        "vw",
+        "vh",
+        "单位",
+        "转换"
+      ],
+      "description": "在 px/rem/em/pt/vw/vh 之间相互转换",
+      "path": "tools/CssUnitConverter.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "des-encryption",
+      "name": "DES Encryption",
+      "nameZh": "DES/3DES 加解密",
+      "icon": "mdi:lock-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "des",
+        "3des",
+        "triple",
+        "encryption",
+        "加密",
+        "对称"
+      ],
+      "description": "DES/3DES 对称加密解密（ECB/CBC 模式）",
+      "path": "tools/DesEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "ecdh-key-exchange",
+      "name": "ECDH Key Exchange",
+      "nameZh": "ECDH 密钥交换",
+      "icon": "mdi:swap-horizontal-bold",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "ecdh",
+        "key",
+        "exchange",
+        "diffie",
+        "hellman",
+        "密钥交换",
+        "椭圆曲线"
+      ],
+      "description": "ECDH 椭圆曲线密钥交换演示，双方推导共享密钥",
+      "path": "tools/EcdhKeyExchange.vue",
+      "author": "k3vi-07",
+      "version": "v1.6.0"
+    },
+    {
+      "id": "ecdsa-signer",
+      "name": "ECDSA Signer",
+      "nameZh": "ECDSA 数字签名",
+      "icon": "mdi:draw-pen",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "ecdsa",
+        "signature",
+        "sign",
+        "verify",
+        "椭圆曲线",
+        "签名",
+        "验签",
+        "p256"
+      ],
+      "description": "ECDSA 数字签名：生成密钥对、签名、验签",
+      "path": "tools/EcdsaSigner.vue",
+      "author": "k3vi-07",
+      "version": "v1.6.0"
+    },
+    {
+      "id": "emoji-picker",
+      "name": "Emoji Picker",
+      "nameZh": "Emoji 表情选择器",
+      "icon": "mdi:emoticon-outline",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "emoji",
+        "表情",
+        "picker",
+        "symbol"
+      ],
+      "description": "搜索和复制 Emoji 表情符号",
+      "path": "tools/EmojiPicker.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
     },
     {
       "id": "entropy-calculator",
@@ -1776,90 +779,1257 @@
       "version": "v1.7.0"
     },
     {
-      "id": "city-hash",
-      "name": "CityHash",
-      "nameZh": "CityHash 哈希",
-      "icon": "mdi:city",
+      "id": "exchange-rate",
+      "name": "Exchange Rate",
+      "nameZh": "汇率换算",
+      "icon": "mdi:currency-usd",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "exchange",
+        "rate",
+        "currency",
+        "汇率",
+        "货币"
+      ],
+      "description": "实时汇率换算（10种货币）",
+      "path": "tools/ExchangeRate.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "figlet-art",
+      "name": "ASCII Art",
+      "nameZh": "ASCII 艺术字",
+      "icon": "mdi:format-text",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "ascii",
+        "art",
+        "figlet",
+        "艺术字"
+      ],
+      "description": "将文本转换为 ASCII 艺术字",
+      "path": "tools/FigletArt.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "float-converter",
+      "name": "Float Converter",
+      "nameZh": "浮点数转换",
+      "icon": "mdi:decimal",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "float",
+        "ieee754",
+        "hex",
+        "binary",
+        "浮点数"
+      ],
+      "description": "IEEE 754 浮点数与十六进制互转",
+      "path": "tools/FloatConverter.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "fnv-hash",
+      "name": "FNV Hash",
+      "nameZh": "FNV 哈希",
+      "icon": "mdi:fingerprint",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "cityhash",
-        "google",
+        "fnv",
         "hash",
+        "32",
         "64",
-        "128",
-        "seed",
-        "非加密",
-        "哈希表"
+        "fast",
+        "非加密哈希"
       ],
-      "description": "Google CityHash 非加密哈希 (64 位 / 128 位，支持 seed)",
-      "path": "tools/CityHash.vue",
+      "description": "FNV-1 / FNV-1a 哈希（32位/64位）",
+      "path": "tools/FnvHash.vue",
+      "author": "k3vi-07",
+      "version": "v1.6.0"
+    },
+    {
+      "id": "gost-hash",
+      "name": "GOST Hash",
+      "nameZh": "GOST 哈希",
+      "icon": "mdi:flag-variant",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "gost",
+        "russian",
+        "hash",
+        "256",
+        "俄罗斯",
+        "哈希",
+        "国标"
+      ],
+      "description": "GOST R 34.11-94 俄罗斯国家标准哈希",
+      "path": "tools/GostHash.vue",
       "author": "k3vi-07",
       "version": "v1.7.0"
     },
     {
-      "id": "bcrypt-checker",
-      "name": "BCrypt Checker",
-      "nameZh": "BCrypt 验证器",
-      "icon": "mdi:lock-check",
+      "id": "hash-file",
+      "name": "File Hash",
+      "nameZh": "文件哈希计算",
+      "icon": "mdi:file-check-outline",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "bcrypt",
+        "file",
+        "hash",
+        "sha",
+        "md5",
+        "checksum",
+        "文件",
+        "校验"
+      ],
+      "description": "计算文件的多种哈希值（SHA-1/256/384/512 + MD5）",
+      "path": "tools/HashFile.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "hash-lookup",
+      "name": "Hash Lookup",
+      "nameZh": "哈希值识别",
+      "icon": "mdi:shield-search",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "hash",
+        "identify",
+        "detect",
+        "识别",
+        "哈希类型"
+      ],
+      "description": "识别哈希值类型和可能的加密算法",
+      "path": "tools/HashLookup.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "hex-base64-convert",
+      "name": "Hex Base64 Converter",
+      "nameZh": "Hex/Base64 互转",
+      "icon": "mdi:swap-vertical",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "hex",
+        "base64",
+        "convert",
+        "互转",
+        "编码"
+      ],
+      "description": "Hex 与 Base64 双向转换",
+      "path": "tools/HexBase64Convert.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "hmac-generator-pro",
+      "name": "HMAC Generator Pro",
+      "nameZh": "HMAC 全系列生成",
+      "icon": "mdi:shield-key",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "hmac",
+        "sha",
+        "sign",
+        "签名",
+        "认证"
+      ],
+      "description": "HMAC 全系列（SHA-1/256/384/512）实时计算",
+      "path": "tools/HmacGeneratorPro.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "html-entity-encoder",
+      "name": "HTML Entity Encoder",
+      "nameZh": "HTML 实体编解码",
+      "icon": "mdi:code-tags",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "html",
+        "entity",
+        "encode",
+        "decode",
+        "named",
+        "decimal",
+        "hex",
+        "实体"
+      ],
+      "description": "HTML 实体编码解码，支持命名/十进制/十六进制格式",
+      "path": "tools/HtmlEntityEncoder.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "html-symbols",
+      "name": "HTML Symbols",
+      "nameZh": "HTML 符号速查",
+      "icon": "mdi:code-not-equal-variant",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "html",
+        "symbol",
+        "entity",
+        "符号",
+        "实体"
+      ],
+      "description": "HTML 特殊符号实体编码速查表",
+      "path": "tools/HtmlSymbols.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "html-to-markdown",
+      "name": "HTML to Markdown",
+      "nameZh": "HTML 转 Markdown",
+      "icon": "mdi:language-html5",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "html",
+        "markdown",
+        "md",
+        "转换"
+      ],
+      "description": "HTML 转换为 Markdown 格式",
+      "path": "tools/HtmlToMarkdown.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "http-status-code",
+      "name": "HTTP Status Code",
+      "nameZh": "HTTP 状态码速查",
+      "icon": "mdi:web",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "http",
+        "status",
+        "code",
+        "响应码",
+        "状态码"
+      ],
+      "description": "HTTP 状态码分类速查表",
+      "path": "tools/HttpStatusCode.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "http-tester",
+      "name": "HTTP Tester",
+      "nameZh": "HTTP 请求测试器",
+      "icon": "mdi:send",
+      "category": [
+        "network"
+      ],
+      "keywords": [
+        "http",
+        "request",
+        "api",
+        "test",
+        "请求",
+        "测试",
+        "fetch"
+      ],
+      "description": "发送 HTTP 请求，查看响应状态、耗时和内容",
+      "path": "tools/HttpTester.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "idea-encryption",
+      "name": "IDEA Encryption",
+      "nameZh": "IDEA 加密",
+      "icon": "mdi:lightbulb-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "idea",
+        "international",
+        "data",
+        "encryption",
+        "block",
+        "分组",
+        "加密"
+      ],
+      "description": "IDEA 国际数据加密算法",
+      "path": "tools/IdeaEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "ip-location",
+      "name": "IP Location",
+      "nameZh": "IP 定位",
+      "icon": "mdi:map-marker",
+      "category": [
+        "network"
+      ],
+      "keywords": [
+        "ip",
+        "location",
+        "geolocation",
+        "定位",
+        "地理"
+      ],
+      "description": "查询 IP 地址的地理位置信息",
+      "path": "tools/IpLocation.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "json-diff",
+      "name": "JSON Diff",
+      "nameZh": "JSON 对比",
+      "icon": "mdi:file-compare",
+      "category": [
+        "json"
+      ],
+      "keywords": [
+        "json",
+        "diff",
+        "compare",
+        "对比",
+        "差异"
+      ],
+      "description": "深度对比两个 JSON 的差异",
+      "path": "tools/JsonDiff.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "json-schema-generator",
+      "name": "JSON Schema Generator",
+      "nameZh": "JSON Schema 生成器",
+      "icon": "mdi:code-braces",
+      "category": [
+        "json"
+      ],
+      "keywords": [
+        "json",
+        "schema",
+        "generator",
+        "生成",
+        "类型"
+      ],
+      "description": "从 JSON 数据自动推断生成 JSON Schema",
+      "path": "tools/JsonSchemaGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "json-to-xml",
+      "name": "JSON to XML",
+      "nameZh": "JSON 转 XML",
+      "icon": "mdi:file-xml-box",
+      "category": [
+        "json"
+      ],
+      "keywords": [
+        "json",
+        "xml",
+        "convert",
+        "转换"
+      ],
+      "description": "将 JSON 数据转换为 XML 格式",
+      "path": "tools/JsonToXml.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "jwt-generator",
+      "name": "JWT Generator",
+      "nameZh": "JWT 生成器",
+      "icon": "mdi:key-plus",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "jwt",
+        "token",
+        "generate",
+        "生成",
+        "令牌"
+      ],
+      "description": "使用密钥生成 JWT Token",
+      "path": "tools/JwtGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "key-code-table",
+      "name": "Key Code Table",
+      "nameZh": "键盘 KeyCode 查询",
+      "icon": "mdi:keyboard",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "keycode",
+        "keyboard",
+        "key",
+        "键盘"
+      ],
+      "description": "实时查询键盘按键的 keyCode 值",
+      "path": "tools/KeyCodeTable.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "line-reverser",
+      "name": "Line Reverser",
+      "nameZh": "多行文本反转",
+      "icon": "mdi:format-align-justify",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "reverse",
+        "line",
+        "text",
+        "反转",
+        "倒序",
+        "行"
+      ],
+      "description": "按行反转、每行字符反转、单词反转等多种模式",
+      "path": "tools/LineReverser.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "loan-calculator",
+      "name": "Loan Calculator",
+      "nameZh": "房贷计算器",
+      "icon": "mdi:calculator",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "loan",
+        "mortgage",
+        "calculator",
+        "房贷",
+        "贷款"
+      ],
+      "description": "等额本息房贷月供计算",
+      "path": "tools/LoanCalculator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "markdown-to-html",
+      "name": "Markdown to HTML",
+      "nameZh": "Markdown 转 HTML",
+      "icon": "mdi:language-markdown",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "markdown",
+        "html",
+        "md",
+        "转换"
+      ],
+      "description": "Markdown 转换为 HTML 代码",
+      "path": "tools/MarkdownToHtml.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "mime-types",
+      "name": "MIME Types",
+      "nameZh": "MIME 类型查询",
+      "icon": "mdi:file-find-outline",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "mime",
+        "type",
+        "content-type",
+        "文件类型"
+      ],
+      "description": "文件扩展名与 MIME 类型互查",
+      "path": "tools/MimeTypes.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "murmur-hash",
+      "name": "MurmurHash",
+      "nameZh": "Murmur 哈希",
+      "icon": "mdi:blur",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "murmur",
+        "hash",
+        "32",
+        "non-cryptographic",
+        "fast",
+        "快速哈希"
+      ],
+      "description": "MurmurHash2 / MurmurHash3 非加密哈希",
+      "path": "tools/MurmurHash.vue",
+      "author": "k3vi-07",
+      "version": "v1.6.0"
+    },
+    {
+      "id": "nato-phonetic",
+      "name": "NATO Phonetic",
+      "nameZh": "NATO 音标字母",
+      "icon": "mdi:alphabetical",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "nato",
+        "phonetic",
+        "aviation",
+        "military",
+        "alphabet",
+        "音标",
+        "北约"
+      ],
+      "description": "NATO 音标字母表编解码",
+      "path": "tools/NatoPhonetic.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "number-to-chinese",
+      "name": "Number to Chinese",
+      "nameZh": "数字转中文大写",
+      "icon": "mdi:currency-cny",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "number",
+        "chinese",
+        "金额",
+        "大写",
+        "人民币"
+      ],
+      "description": "将阿拉伯数字转换为中文大写金额",
+      "path": "tools/NumberToChinese.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "password-strength",
+      "name": "Password Strength",
+      "nameZh": "密码强度检测",
+      "icon": "mdi:shield-check-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
         "password",
-        "verify",
-        "salt",
-        "cost",
+        "strength",
         "密码",
-        "验证",
+        "强度",
+        "安全"
+      ],
+      "description": "检测密码强度、熵值和破解时间",
+      "path": "tools/PasswordStrength.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "pbkdf2-generator",
+      "name": "PBKDF2 Generator",
+      "nameZh": "PBKDF2 密钥派生",
+      "icon": "mdi:key-chain-variant",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "pbkdf2",
+        "key",
+        "derivation",
+        "derive",
+        "密钥"
+      ],
+      "description": "PBKDF2 密钥派生函数（迭代/盐/长度可调）",
+      "path": "tools/Pbkdf2Generator.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "pem-formatter",
+      "name": "PEM Formatter",
+      "nameZh": "PEM 格式化",
+      "icon": "mdi:file-certificate",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "pem",
+        "rsa",
+        "certificate",
+        "key",
+        "format",
+        "证书",
+        "格式化",
+        "base64"
+      ],
+      "description": "PEM 证书格式化、去换行、提取 Base64",
+      "path": "tools/PemFormatter.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "ping-test",
+      "name": "Ping Test",
+      "nameZh": "Ping 延迟测试",
+      "icon": "mdi:speedometer",
+      "category": [
+        "network"
+      ],
+      "keywords": [
+        "ping",
+        "latency",
+        "network",
+        "延迟",
+        "网络"
+      ],
+      "description": "测试网站延迟（近似 ping）",
+      "path": "tools/PingTest.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "playfair-cipher",
+      "name": "Playfair Cipher",
+      "nameZh": "Playfair 密码",
+      "icon": "mdi:grid",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "playfair",
+        "digraph",
+        "substitution",
+        "5x5",
+        "替换",
+        "古典",
+        "密码"
+      ],
+      "description": "Playfair 双字母替换密码，5×5 矩阵",
+      "path": "tools/PlayfairCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "punycode-url",
+      "name": "Punycode URL",
+      "nameZh": "Punycode 域名转换",
+      "icon": "mdi:web",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "punycode",
+        "idn",
+        "domain",
+        "url",
+        "国际化域名",
+        "xn--"
+      ],
+      "description": "完整 URL 的 Punycode 编解码，支持中文域名",
+      "path": "tools/PunycodeUrl.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "qr-scanner",
+      "name": "QR Code Scanner",
+      "nameZh": "二维码识别",
+      "icon": "mdi:qrcode-scan",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "qr",
+        "qrcode",
+        "scan",
+        "识别",
+        "扫码"
+      ],
+      "description": "上传图片识别二维码内容",
+      "path": "tools/QrCodeScanner.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "rabbit-cipher",
+      "name": "Rabbit Cipher",
+      "nameZh": "Rabbit 流密码",
+      "icon": "mdi:rabbit",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "rabbit",
+        "stream",
+        "cipher",
+        "流密码",
+        "rfc6631",
+        "加密"
+      ],
+      "description": "Rabbit 高速流密码 (RFC 6631)",
+      "path": "tools/RabbitCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "rail-fence-cipher",
+      "name": "Rail Fence Cipher",
+      "nameZh": "栅栏密码",
+      "icon": "mdi:fence",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "rail",
+        "fence",
+        "zigzag",
+        "transposition",
+        "cipher",
+        "栅栏",
+        "置换"
+      ],
+      "description": "栅栏密码编解码，可调栏数",
+      "path": "tools/RailFenceCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "random-string",
+      "name": "Random String",
+      "nameZh": "随机字符串生成",
+      "icon": "mdi:shuffle-variant",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "random",
+        "string",
+        "token",
+        "随机",
+        "字符串"
+      ],
+      "description": "生成安全的随机字符串",
+      "path": "tools/RandomString.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "rc4-encryption",
+      "name": "RC4 Encryption",
+      "nameZh": "RC4 流密码",
+      "icon": "mdi:lock-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "rc4",
+        "stream",
+        "cipher",
+        "encrypt",
+        "流密码",
+        "加密"
+      ],
+      "description": "RC4 流密码加解密，输出 Hex 格式",
+      "path": "tools/Rc4Encryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.6.0"
+    },
+    {
+      "id": "regex-cheat-sheet",
+      "name": "Regex Cheat Sheet",
+      "nameZh": "正则表达式速查",
+      "icon": "mdi:regex",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "regex",
+        "regular",
+        "expression",
+        "正则",
+        "速查"
+      ],
+      "description": "正则表达式语法速查表",
+      "path": "tools/RegexCheatSheet.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "regex-tester",
+      "name": "Regex Tester",
+      "nameZh": "正则表达式测试",
+      "icon": "mdi:regex",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "regex",
+        "test",
+        "正则",
+        "测试",
+        "匹配"
+      ],
+      "description": "实时测试正则表达式匹配结果",
+      "path": "tools/RegexTester.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "rot-cipher",
+      "name": "ROT Cipher",
+      "nameZh": "ROT 位移密码",
+      "icon": "mdi:rotate-right",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "rot",
+        "rot13",
+        "caesar",
+        "shift",
+        "cipher",
+        "凯撒",
+        "位移"
+      ],
+      "description": "ROT N 位移密码，支持 1-25 位移，含 ROT13",
+      "path": "tools/RotCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "salsa20-encryption",
+      "name": "Salsa20 Encryption",
+      "nameZh": "Salsa20 流密码",
+      "icon": "mdi:waves",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "salsa20",
+        "stream",
+        "cipher",
+        "流密码",
+        "djb",
+        "加密"
+      ],
+      "description": "Salsa20 流密码，256 位密钥",
+      "path": "tools/Salsa20Encryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "scrypt-generator",
+      "name": "scrypt Generator",
+      "nameZh": "scrypt 密钥派生",
+      "icon": "mdi:memory",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "scrypt",
+        "kdf",
+        "key",
+        "derivation",
+        "asic",
+        "resistant"
+      ],
+      "description": "scrypt 内存困难型密钥派生（N/r/p 参数可调）",
+      "path": "tools/ScryptGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "sip-hash",
+      "name": "SipHash",
+      "nameZh": "SipHash 哈希",
+      "icon": "mdi:cup-water",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "siphash",
+        "hash",
+        "prf",
+        "hashtable",
+        "anti-collision",
+        "防碰撞"
+      ],
+      "description": "SipHash-2-4 / SipHash-1-3 短输入 PRF 哈希",
+      "path": "tools/SipHash.vue",
+      "author": "k3vi-07",
+      "version": "v1.6.0"
+    },
+    {
+      "id": "sm3-hash",
+      "name": "SM3 Hash",
+      "nameZh": "SM3 国密哈希",
+      "icon": "mdi:cube-outline",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "sm3",
+        "chinese",
+        "national",
+        "国密",
+        "哈希",
+        "gm"
+      ],
+      "description": "SM3 中国国密密码杂凑算法（GM/T 0004）",
+      "path": "tools/Sm3Hash.vue",
+      "author": "k3vi-07",
+      "version": "v1.4.0"
+    },
+    {
+      "id": "sm4-encryption",
+      "name": "SM4 Encryption",
+      "nameZh": "SM4 国密加密",
+      "icon": "mdi:shield-account",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "sm4",
+        "国密",
+        "block",
+        "cipher",
+        "分组密码",
+        "guomi",
+        "中国"
+      ],
+      "description": "SM4 国密分组密码算法（ECB 模式）",
+      "path": "tools/Sm4Encryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.6.0"
+    },
+    {
+      "id": "snefru-hash",
+      "name": "Snefru Hash",
+      "nameZh": "Snefru 哈希",
+      "icon": "mdi:triangle",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "snefru",
+        "hash",
+        "256",
+        "merkle",
         "哈希"
       ],
-      "description": "解析并验证 BCrypt 密码哈希 ($2a$10$...)",
-      "path": "tools/BcryptChecker.vue",
+      "description": "Snefru 256 位哈希 (Ralph Merkle 设计)",
+      "path": "tools/SnefruHash.vue",
       "author": "k3vi-07",
       "version": "v1.7.0"
     },
     {
-      "id": "aes-ctr-encryption",
-      "name": "AES-CTR Encryption",
-      "nameZh": "AES-CTR 加密",
-      "icon": "mdi:counter",
+      "id": "sql-injection-checker",
+      "name": "SQL Injection Checker",
+      "nameZh": "SQL 注入检测",
+      "icon": "mdi:database-alert-outline",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "aes",
-        "ctr",
-        "counter",
-        "stream",
-        "加密",
-        "计数器"
+        "sql",
+        "injection",
+        "sqli",
+        "注入",
+        "安全"
       ],
-      "description": "AES-256-CTR 计数器模式流加密",
-      "path": "tools/AesCtrEncryption.vue",
+      "description": "SQL 注入风险模式检测",
+      "path": "tools/SqlInjectionChecker.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "stopwatch",
+      "name": "Stopwatch",
+      "nameZh": "秒表",
+      "icon": "mdi:timer-outline",
+      "category": [
+        "datetime"
+      ],
+      "keywords": [
+        "stopwatch",
+        "timer",
+        "秒表"
+      ],
+      "description": "高精度秒表，支持记圈",
+      "path": "tools/Stopwatch.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "string-escape-pro",
+      "name": "String Escape Pro",
+      "nameZh": "文本转义工具",
+      "icon": "mdi:format-quote-close",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "escape",
+        "unicode",
+        "html",
+        "url",
+        "hex",
+        "js",
+        "转义",
+        "编码"
+      ],
+      "description": "HTML 实体/URL/Unicode/Hex/JS 字符串转义",
+      "path": "tools/StringEscapePro.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "symbol-picker",
+      "name": "Symbol Picker",
+      "nameZh": "特殊符号选择器",
+      "icon": "mdi:sigma",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "symbol",
+        "special",
+        "符号",
+        "特殊字符"
+      ],
+      "description": "数学、箭头、花色等特殊符号",
+      "path": "tools/SymbolPicker.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "tap-code",
+      "name": "Tap Code",
+      "nameZh": "敲击码",
+      "icon": "mdi:gesture-tap",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "tap",
+        "code",
+        "prisoner",
+        "knock",
+        "敲击",
+        "战俘"
+      ],
+      "description": "敲击码编解码，5x5 网格行列表示",
+      "path": "tools/TapCode.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "tea-encryption",
+      "name": "TEA Encryption",
+      "nameZh": "TEA 加密",
+      "icon": "mdi:tea",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "tea",
+        "tiny",
+        "encryption",
+        "feistel",
+        "轻量级",
+        "加密"
+      ],
+      "description": "TEA (Tiny Encryption Algorithm) 轻量级分组密码",
+      "path": "tools/TeaEncryption.vue",
       "author": "k3vi-07",
       "version": "v1.7.0"
     },
     {
-      "id": "aes-cbc-encryption",
-      "name": "AES-CBC Encryption",
-      "nameZh": "AES-CBC 加密",
-      "icon": "mdi:link-variant",
+      "id": "text-case-batch",
+      "name": "Text Case Batch",
+      "nameZh": "批量大小写转换",
+      "icon": "mdi:format-text",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "case",
+        "upper",
+        "lower",
+        "camel",
+        "snake",
+        "kebab",
+        "大小写",
+        "转换"
+      ],
+      "description": "12 种命名风格一键转换：驼峰、下划线、短横线等",
+      "path": "tools/TextCaseBatch.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "text-dedup",
+      "name": "Text Dedup",
+      "nameZh": "文本行去重",
+      "icon": "mdi:format-list-bulleted",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "dedup",
+        "unique",
+        "去重",
+        "重复"
+      ],
+      "description": "文本行去重，保留首次出现顺序",
+      "path": "tools/TextDedup.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "text-encryptor",
+      "name": "Text Encryptor",
+      "nameZh": "文本加密器",
+      "icon": "mdi:lock-outline",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "aes",
-        "cbc",
-        "block",
-        "pkcs7",
+        "encrypt",
+        "decrypt",
+        "xor",
+        "base64",
         "加密",
-        "分组"
+        "解密"
       ],
-      "description": "AES-256-CBC + PKCS7 填充",
-      "path": "tools/AesCbcEncryption.vue",
+      "description": "XOR 加密 + Base64 编码，无需外部依赖",
+      "path": "tools/TextEncryptor.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "text-flip",
+      "name": "Text Flip",
+      "nameZh": "趣味文字翻转",
+      "icon": "mdi:flip-vertical",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "flip",
+        "upside",
+        "mirror",
+        "fancy",
+        "翻转",
+        "镜像",
+        "花体"
+      ],
+      "description": "上下翻转/镜像/气泡字/全角等趣味文字",
+      "path": "tools/TextFlip.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "text-sort",
+      "name": "Text Sort",
+      "nameZh": "文本排序",
+      "icon": "mdi:sort-alphabetical-ascending",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "sort",
+        "order",
+        "排序",
+        "排列"
+      ],
+      "description": "文本行排序（升序/降序/自然/随机）",
+      "path": "tools/TextSort.vue",
+      "author": "k3vi-07",
+      "version": "v1.3.0"
+    },
+    {
+      "id": "text-to-speech",
+      "name": "Text to Speech",
+      "nameZh": "文本转语音",
+      "icon": "mdi:volume-high",
+      "category": [
+        "text"
+      ],
+      "keywords": [
+        "tts",
+        "speech",
+        "audio",
+        "语音",
+        "朗读"
+      ],
+      "description": "使用浏览器 Web Speech API 朗读文本",
+      "path": "tools/TextToSpeech.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "tiger-hash",
+      "name": "Tiger Hash",
+      "nameZh": "Tiger 哈希",
+      "icon": "mdi:paw",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "tiger",
+        "hash",
+        "192",
+        "fast",
+        "64-bit",
+        "哈希"
+      ],
+      "description": "Tiger 192 位哈希，64 位平台优化",
+      "path": "tools/TigerHash.vue",
       "author": "k3vi-07",
       "version": "v1.7.0"
     },
@@ -1885,47 +2055,173 @@
       "version": "v1.7.0"
     },
     {
-      "id": "idea-encryption",
-      "name": "IDEA Encryption",
-      "nameZh": "IDEA 加密",
-      "icon": "mdi:lightbulb-outline",
+      "id": "unit-converter",
+      "name": "Unit Converter",
+      "nameZh": "单位换算器",
+      "icon": "mdi:ruler",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "unit",
+        "convert",
+        "length",
+        "weight",
+        "temperature",
+        "单位",
+        "换算"
+      ],
+      "description": "长度/重量/温度/面积/速度/数据单位换算",
+      "path": "tools/UnitConverter.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "url-encode-pro",
+      "name": "URL Encode Pro",
+      "nameZh": "URL 编码增强版",
+      "icon": "mdi:link-variant",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "url",
+        "encode",
+        "decode",
+        "percent",
+        "uri",
+        "编码",
+        "百分号"
+      ],
+      "description": "增强版 URL 编码解码，支持全编码和 + 号空格",
+      "path": "tools/UrlEncodePro.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "utm-generator",
+      "name": "UTM Generator",
+      "nameZh": "UTM 链接生成器",
+      "icon": "mdi:link-plus",
+      "category": [
+        "web"
+      ],
+      "keywords": [
+        "utm",
+        "url",
+        "marketing",
+        "tracking",
+        "营销"
+      ],
+      "description": "生成带 UTM 追踪参数的营销链接",
+      "path": "tools/UtmGenerator.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "uu-encode",
+      "name": "uuencode",
+      "nameZh": "uuencode 编码",
+      "icon": "mdi:file-transfer",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "uuencode",
+        "uudecode",
+        "unix",
+        "binary",
+        "编码"
+      ],
+      "description": "uuencode / uudecode 编解码，Unix 经典二进制转文本",
+      "path": "tools/UuEncode.vue",
+      "author": "k3vi-07",
+      "version": "v1.2.0"
+    },
+    {
+      "id": "uuid-comparer",
+      "name": "UUID Generator Pro",
+      "nameZh": "UUID 多版本生成",
+      "icon": "mdi:identifier",
+      "category": [
+        "programming"
+      ],
+      "keywords": [
+        "uuid",
+        "guid",
+        "v4",
+        "nil",
+        "生成",
+        "唯一"
+      ],
+      "description": "生成 UUID v4 / nil，支持大写、花括号、去横线格式",
+      "path": "tools/UuidComparer.vue",
+      "author": "k3vi-07",
+      "version": "v1.5.0"
+    },
+    {
+      "id": "whirlpool-hash",
+      "name": "Whirlpool Hash",
+      "nameZh": "Whirlpool 哈希",
+      "icon": "mdi:weather-hurricane",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "idea",
-        "international",
-        "data",
-        "encryption",
-        "block",
-        "分组",
-        "加密"
+        "whirlpool",
+        "hash",
+        "512",
+        "iso",
+        "哈希"
       ],
-      "description": "IDEA 国际数据加密算法",
-      "path": "tools/IdeaEncryption.vue",
+      "description": "Whirlpool 512 位哈希 (ISO/IEC 10118-3)",
+      "path": "tools/WhirlpoolHash.vue",
       "author": "k3vi-07",
       "version": "v1.7.0"
     },
     {
-      "id": "tea-encryption",
-      "name": "TEA Encryption",
-      "nameZh": "TEA 加密",
-      "icon": "mdi:tea",
+      "id": "xss-sanitizer",
+      "name": "XSS Sanitizer",
+      "nameZh": "XSS 净化器",
+      "icon": "mdi:shield-alert",
       "category": [
         "cryptography"
       ],
       "keywords": [
-        "tea",
-        "tiny",
-        "encryption",
-        "feistel",
-        "轻量级",
-        "加密"
+        "xss",
+        "security",
+        "sanitize",
+        "html",
+        "安全",
+        "净化",
+        "过滤"
       ],
-      "description": "TEA (Tiny Encryption Algorithm) 轻量级分组密码",
-      "path": "tools/TeaEncryption.vue",
+      "description": "检测和净化 XSS 攻击代码，移除危险标签和事件",
+      "path": "tools/XssSanitizer.vue",
       "author": "k3vi-07",
-      "version": "v1.7.0"
+      "version": "v1.5.0"
+    },
+    {
+      "id": "xtea-encryption",
+      "name": "XTEA/XXTEA Encryption",
+      "nameZh": "XTEA/XXTEA 加密",
+      "icon": "mdi:lock-pattern",
+      "category": [
+        "cryptography"
+      ],
+      "keywords": [
+        "xtea",
+        "xxtea",
+        "block",
+        "cipher",
+        "分组",
+        "加密",
+        "tea"
+      ],
+      "description": "XTEA 和 XXTEA 分组密码加解密",
+      "path": "tools/XteaEncryption.vue",
+      "author": "k3vi-07",
+      "version": "v1.6.0"
     }
   ],
   "version": "v1.7.0"
