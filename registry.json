@@ -66,6 +66,27 @@
       "version": "v1.6.0"
     },
     {
+      "id": "affine-cipher",
+      "name": "Affine Cipher",
+      "nameZh": "仿射密码",
+      "icon": "mdi:function-variant",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "affine",
+        "cipher",
+        "math",
+        "modular",
+        "仿射",
+        "密码"
+      ],
+      "description": "仿射密码 E(x)=(ax+b) mod 26，支持自定义 a/b 参数",
+      "path": "tools/AffineCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
       "id": "argon2-generator",
       "name": "Argon2 Generator",
       "nameZh": "Argon2 密钥派生",
@@ -149,6 +170,48 @@
       "version": "v1.2.0"
     },
     {
+      "id": "base16-encode",
+      "name": "Base16 Encode",
+      "nameZh": "Base16 编码",
+      "icon": "mdi:hexadecimal",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "base16",
+        "hex",
+        "encode",
+        "decode",
+        "十六进制",
+        "编码"
+      ],
+      "description": "Base16 (Hex) 编码解码，支持空格分隔和 0x 前缀",
+      "path": "tools/Base16Encode.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "base32-pro",
+      "name": "Base32 Pro",
+      "nameZh": "Base32 增强版",
+      "icon": "mdi:binary",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "base32",
+        "encode",
+        "decode",
+        "hex",
+        "十六进制",
+        "编码"
+      ],
+      "description": "Base32 编码解码，支持 RFC4648 和十六进制变体",
+      "path": "tools/Base32Pro.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
       "id": "base64-image",
       "name": "Base64 Image",
       "nameZh": "Base64 图片互转",
@@ -169,6 +232,27 @@
       "path": "tools/Base64Image.vue",
       "author": "k3vi-07",
       "version": "v1.5.0"
+    },
+    {
+      "id": "base64url-encode",
+      "name": "Base64URL Encode",
+      "nameZh": "Base64URL 编码",
+      "icon": "mdi:link-variant",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "base64url",
+        "url",
+        "safe",
+        "encode",
+        "decode",
+        "编码"
+      ],
+      "description": "URL 安全的 Base64 编码，替换 +/ 并去除填充",
+      "path": "tools/Base64UrlEncode.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
     },
     {
       "id": "base85-encode",
@@ -276,6 +360,27 @@
       "version": "v1.2.0"
     },
     {
+      "id": "binary-text",
+      "name": "Binary Text",
+      "nameZh": "二进制文本互转",
+      "icon": "mdi:binary",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "binary",
+        "text",
+        "0b",
+        "二进制",
+        "文本",
+        "编码"
+      ],
+      "description": "文本与二进制编码互转，支持空格分隔",
+      "path": "tools/BinaryText.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
       "id": "blake2-hash",
       "name": "BLAKE2 Hash",
       "nameZh": "BLAKE2 哈希",
@@ -377,6 +482,30 @@
       "path": "tools/Chacha20Encryption.vue",
       "author": "k3vi-07",
       "version": "v1.4.0"
+    },
+    {
+      "id": "char-table",
+      "name": "Character Table",
+      "nameZh": "字符编码表",
+      "icon": "mdi:table",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "ascii",
+        "char",
+        "table",
+        "decimal",
+        "hex",
+        "octal",
+        "binary",
+        "字符",
+        "编码表"
+      ],
+      "description": "实时显示每个字符的十进制/十六进制/八进制/二进制编码",
+      "path": "tools/CharTable.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
     },
     {
       "id": "character-counter",
@@ -671,6 +800,27 @@
       "version": "v1.5.0"
     },
     {
+      "id": "decimal-text",
+      "name": "Decimal Text",
+      "nameZh": "十进制文本互转",
+      "icon": "mdi:numeric",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "decimal",
+        "text",
+        "十进制",
+        "文本",
+        "ascii",
+        "编码"
+      ],
+      "description": "文本与十进制编码（ASCII 码值）互转",
+      "path": "tools/DecimalText.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
       "id": "des-encryption",
       "name": "DES Encryption",
       "nameZh": "DES/3DES 加解密",
@@ -779,6 +929,30 @@
       "version": "v1.7.0"
     },
     {
+      "id": "escape-sequencer",
+      "name": "Escape Sequencer",
+      "nameZh": "多语言转义工具",
+      "icon": "mdi:format-text",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "escape",
+        "unescape",
+        "c",
+        "python",
+        "json",
+        "sql",
+        "xml",
+        "csv",
+        "转义"
+      ],
+      "description": "6 种语言转义编解码：C/Java、Python、JSON、SQL、XML、CSV",
+      "path": "tools/EscapeSequencer.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
       "id": "exchange-rate",
       "name": "Exchange Rate",
       "nameZh": "汇率换算",
@@ -857,6 +1031,27 @@
       "path": "tools/FnvHash.vue",
       "author": "k3vi-07",
       "version": "v1.6.0"
+    },
+    {
+      "id": "full-width-convert",
+      "name": "Full Width Convert",
+      "nameZh": "全角半角转换",
+      "icon": "mdi:format-text-variant",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "fullwidth",
+        "halfwidth",
+        "zenkaku",
+        "hankaku",
+        "全角",
+        "半角"
+      ],
+      "description": "全角半角字符互转，支持 ASCII 和日文片假名",
+      "path": "tools/FullWidthConvert.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
     },
     {
       "id": "gost-hash",
@@ -939,6 +1134,27 @@
       ],
       "description": "Hex 与 Base64 双向转换",
       "path": "tools/HexBase64Convert.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "hex-escape",
+      "name": "Hex Escape",
+      "nameZh": "十六进制转义",
+      "icon": "mdi:hexadecimal",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "hex",
+        "escape",
+        "unescape",
+        "xhh",
+        "十六进制",
+        "转义"
+      ],
+      "description": "十六进制转义序列编解码，反斜杠 x 加两位十六进制格式",
+      "path": "tools/HexEscape.vue",
       "author": "k3vi-07",
       "version": "v1.7.0"
     },
@@ -1107,6 +1323,27 @@
       "path": "tools/IpLocation.vue",
       "author": "k3vi-07",
       "version": "v1.2.0"
+    },
+    {
+      "id": "js-escape",
+      "name": "JS Escape",
+      "nameZh": "JavaScript 转义",
+      "icon": "mdi:language-javascript",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "javascript",
+        "js",
+        "escape",
+        "unescape",
+        "unicode",
+        "转义"
+      ],
+      "description": "JavaScript 字符串转义/反转义，支持 Unicode 转义格式",
+      "path": "tools/JsEscape.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
     },
     {
       "id": "json-diff",
@@ -1349,6 +1586,71 @@
       "version": "v1.2.0"
     },
     {
+      "id": "numeric-char-ref",
+      "name": "Numeric Character Reference",
+      "nameZh": "数字字符引用",
+      "icon": "mdi:code-tags",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "ncr",
+        "xml",
+        "html",
+        "numeric",
+        "character",
+        "reference",
+        "数字",
+        "字符引用"
+      ],
+      "description": "XML/HTML 数字字符引用编解码",
+      "path": "tools/NumericCharRef.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "octal-escape",
+      "name": "Octal Escape",
+      "nameZh": "八进制转义",
+      "icon": "mdi:octagon-outline",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "octal",
+        "escape",
+        "unescape",
+        "c",
+        "八进制",
+        "转义"
+      ],
+      "description": "八进制转义序列编解码，非 ASCII 字符转为反斜杠加三位八进制格式",
+      "path": "tools/OctalEscape.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "octal-text",
+      "name": "Octal Text",
+      "nameZh": "八进制文本互转",
+      "icon": "mdi:octagon-outline",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "octal",
+        "text",
+        "0o",
+        "八进制",
+        "文本",
+        "编码"
+      ],
+      "description": "文本与八进制编码互转，支持空格分隔和 0 前缀",
+      "path": "tools/OctalText.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
       "id": "password-strength",
       "name": "Password Strength",
       "nameZh": "密码强度检测",
@@ -1454,6 +1756,27 @@
       "version": "v1.7.0"
     },
     {
+      "id": "polybius-square",
+      "name": "Polybius Square",
+      "nameZh": "波利比奥斯方阵",
+      "icon": "mdi:grid",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "polybius",
+        "square",
+        "cipher",
+        "grid",
+        "波利比奥斯",
+        "方阵"
+      ],
+      "description": "波利比奥斯方阵编码，5x5 网格行列数字表示",
+      "path": "tools/PolybiusSquare.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
       "id": "punycode-url",
       "name": "Punycode URL",
       "nameZh": "Punycode 域名转换",
@@ -1495,6 +1818,28 @@
       "version": "v1.2.0"
     },
     {
+      "id": "quoted-printable",
+      "name": "Quoted-Printable",
+      "nameZh": "QP 编码",
+      "icon": "mdi:email-outline",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "quoted",
+        "printable",
+        "qp",
+        "mime",
+        "email",
+        "邮件",
+        "编码"
+      ],
+      "description": "Quoted-Printable 编解码，MIME 邮件传输编码",
+      "path": "tools/QuotedPrintable.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
       "id": "rabbit-cipher",
       "name": "Rabbit Cipher",
       "nameZh": "Rabbit 流密码",
@@ -1512,6 +1857,30 @@
       ],
       "description": "Rabbit 高速流密码 (RFC 6631)",
       "path": "tools/RabbitCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "radix-converter",
+      "name": "Radix Converter",
+      "nameZh": "进制转换器",
+      "icon": "mdi:swap-horizontal",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "radix",
+        "base",
+        "convert",
+        "binary",
+        "octal",
+        "decimal",
+        "hex",
+        "进制",
+        "转换"
+      ],
+      "description": "整数进制转换，支持 2/8/10/16/36 进制互转",
+      "path": "tools/RadixConverter.vue",
       "author": "k3vi-07",
       "version": "v1.7.0"
     },
@@ -1681,6 +2050,28 @@
       "path": "tools/ScryptGenerator.vue",
       "author": "k3vi-07",
       "version": "v1.4.0"
+    },
+    {
+      "id": "scytale-cipher",
+      "name": "Scytale Cipher",
+      "nameZh": "密码棒",
+      "icon": "mdi:cylinder",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "scytale",
+        "cipher",
+        "transposition",
+        "ancient",
+        "greek",
+        "密码棒",
+        "置换"
+      ],
+      "description": "古希腊密码棒置换密码，可调缠绕数",
+      "path": "tools/ScytaleCipher.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
     },
     {
       "id": "sip-hash",
@@ -2222,6 +2613,47 @@
       "path": "tools/XteaEncryption.vue",
       "author": "k3vi-07",
       "version": "v1.6.0"
+    },
+    {
+      "id": "xx-encode",
+      "name": "xxencode",
+      "nameZh": "xxencode 编码",
+      "icon": "mdi:file-transfer",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "xxencode",
+        "xxdecode",
+        "unix",
+        "binary",
+        "编码"
+      ],
+      "description": "xxencode 编解码，uuencode 的跨平台变体",
+      "path": "tools/XxEncode.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
+    },
+    {
+      "id": "z85-encode",
+      "name": "Z85 Encode",
+      "nameZh": "Z85 编码",
+      "icon": "mdi:binary",
+      "category": [
+        "encode"
+      ],
+      "keywords": [
+        "z85",
+        "zeromq",
+        "base85",
+        "encode",
+        "decode",
+        "编码"
+      ],
+      "description": "Z85 (ZeroMQ Base85) 编码解码",
+      "path": "tools/Z85Encode.vue",
+      "author": "k3vi-07",
+      "version": "v1.7.0"
     }
   ],
   "version": "v1.7.0"
